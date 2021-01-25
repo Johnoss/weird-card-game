@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1537e30a44849e94da492d0ddd432fca, type: 3}
+  m_Name: GaugesConfig
+  m_EditorClassIdentifier: 
+  gaugePrefab: {fileID: 6859330170840003591, guid: e3fd89d0bf7cc4d44a8c59cb4988da07,
+    type: 3}
+  gaugeSettings:
+  - Name: Ricky
+    IconSprite: {fileID: -8286685355348908795, guid: 88d6ecc4be0ddb34bb994929e15a404f,
+      type: 3}
+    OffsetX: -40
+    Expressions:
+    - {fileID: 2041902953047494574, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    - {fileID: -8286685355348908795, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    - {fileID: -8286685355348908795, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    - {fileID: 6645512168655360968, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    - {fileID: -5796785009863570942, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    - {fileID: -8394341667169071161, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    - {fileID: -8503179299750040994, guid: 88d6ecc4be0ddb34bb994929e15a404f, type: 3}
+    ReactionSettings:
+    - Effect: 1
+      ReactionSprite: {fileID: -8286685355348908795, guid: 88d6ecc4be0ddb34bb994929e15a404f,
+        type: 3}
+    - Effect: 2
+      ReactionSprite: {fileID: 2041902953047494574, guid: 88d6ecc4be0ddb34bb994929e15a404f,
+        type: 3}
+    - Effect: 3
+      ReactionSprite: {fileID: -5796785009863570942, guid: 88d6ecc4be0ddb34bb994929e15a404f,
+        type: 3}
+    - Effect: 4
+      ReactionSprite: {fileID: -8394341667169071161, guid: 88d6ecc4be0ddb34bb994929e15a404f,
+        type: 3}
+  - Name: Steve
+    IconSprite: {fileID: 47504324609265284, guid: 20e7c584f28081b46a43bdc3c6ec8368,
+      type: 3}
+    OffsetX: -20
+    Expressions:
+    - {fileID: -7516710988481396620, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    - {fileID: 47504324609265284, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    - {fileID: 47504324609265284, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    - {fileID: 5876015369415267283, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    - {fileID: -531859694535647542, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    - {fileID: -7885933384681501896, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    - {fileID: -5136361997490922686, guid: 20e7c584f28081b46a43bdc3c6ec8368, type: 3}
+    ReactionSettings:
+    - Effect: 1
+      ReactionSprite: {fileID: 47504324609265284, guid: 20e7c584f28081b46a43bdc3c6ec8368,
+        type: 3}
+    - Effect: 2
+      ReactionSprite: {fileID: -7516710988481396620, guid: 20e7c584f28081b46a43bdc3c6ec8368,
+        type: 3}
+    - Effect: 3
+      ReactionSprite: {fileID: -531859694535647542, guid: 20e7c584f28081b46a43bdc3c6ec8368,
+        type: 3}
+    - Effect: 4
+      ReactionSprite: {fileID: -7885933384681501896, guid: 20e7c584f28081b46a43bdc3c6ec8368,
+        type: 3}
+  - Name: Karl
+    IconSprite: {fileID: 3730905212070498997, guid: 1b2fa1c6ef9ee5643919b732da1ec667,
+      type: 3}
+    OffsetX: 0
+    Expressions:
+    - {fileID: -6993172566040394577, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    - {fileID: 3730905212070498997, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    - {fileID: 3730905212070498997, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    - {fileID: 8292001089118460050, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    - {fileID: 4056479578179783422, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    - {fileID: 6639311821677923270, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    - {fileID: -1939462604948828204, guid: 1b2fa1c6ef9ee5643919b732da1ec667, type: 3}
+    ReactionSettings:
+    - Effect: 1
+      ReactionSprite: {fileID: 3730905212070498997, guid: 1b2fa1c6ef9ee5643919b732da1ec667,
+        type: 3}
+    - Effect: 2
+      ReactionSprite: {fileID: -6993172566040394577, guid: 1b2fa1c6ef9ee5643919b732da1ec667,
+        type: 3}
+    - Effect: 3
+      ReactionSprite: {fileID: 4056479578179783422, guid: 1b2fa1c6ef9ee5643919b732da1ec667,
+        type: 3}
+    - Effect: 4
+      ReactionSprite: {fileID: 6639311821677923270, guid: 1b2fa1c6ef9ee5643919b732da1ec667,
+        type: 3}

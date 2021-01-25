@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599672a5ef9a42b7ba4b67cd56f2f174, type: 3}
+  m_Name: CommonStatsConfig
+  m_EditorClassIdentifier: 
+  glowGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0.09411766, a: 1}
+    key1: {r: 1, g: 0.7176471, b: 0, a: 1}
+    key2: {r: 1, g: 1, b: 0, a: 0}
+    key3: {r: 0.11320758, g: 1, b: 0, a: 0}
+    key4: {r: 1, g: 1, b: 0, a: 0}
+    key5: {r: 1, g: 0.7176471, b: 0, a: 0}
+    key6: {r: 1, g: 0, b: 0.09411765, a: 0}
+    key7: {r: 1, g: 0.13333334, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 9830
+    ctime2: 22937
+    ctime3: 32768
+    ctime4: 42598
+    ctime5: 55705
+    ctime6: 65535
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 7
+    m_NumAlphaKeys: 2
+  defaultStatLevel:
+    min: 0.1
+    max: 0.9
+  rangeScoreModifiers:
+  - Color: {r: 1, g: 0.13217445, b: 0, a: 1}
+    Tooltip: is bored to death
+    Range:
+      min: 0
+      max: 0.02
+    ScoreModifier: -0.2
+    ShouldShake: 0
+  - Color: {r: 1, g: 0.44059038, b: 0, a: 1}
+    Tooltip: is bored
+    Range:
+      min: 0.02
+      max: 0.2
+    ScoreModifier: -0.1
+    ShouldShake: 0
+  - Color: {r: 1, g: 0.7398777, b: 0, a: 1}
+    Tooltip: is too calm
+    Range:
+      min: 0.2
+      max: 0.4
+    ScoreModifier: 0
+    ShouldShake: 0
+  - Color: {r: 0.070190914, g: 0.6226415, b: 0, a: 1}
+    Tooltip: is annoyed enough
+    Range:
+      min: 0.4
+      max: 0.6
+    ScoreModifier: 0.1
+    ShouldShake: 0
+  - Color: {r: 1, g: 0.7398777, b: 0, a: 1}
+    Tooltip: is too annoyed
+    Range:
+      min: 0.6
+      max: 0.8
+    ScoreModifier: 0
+    ShouldShake: 0
+  - Color: {r: 1, g: 0.44059038, b: 0, a: 1}
+    Tooltip: is extremely annoyed
+    Range:
+      min: 0.8
+      max: 0.98
+    ScoreModifier: -0.1
+    ShouldShake: 0
+  - Color: {r: 1, g: 0.13217445, b: 0, a: 1}
+    Tooltip: is furious
+    Range:
+      min: 0.98
+      max: 1
+    ScoreModifier: -0.2
+    ShouldShake: 1
+  effectSettings:
+  - CardEffect: 0
+    EffectValue:
+      min: 0
+      max: 0
+    EffectDescription: 0
+    EffectTextColor: {r: 0, g: 0, b: 0, a: 0}
+  - CardEffect: 1
+    EffectValue:
+      min: -0.1
+      max: -0.05
+    EffectDescription: '-'
+    EffectTextColor: {r: 0.13725491, g: 0.5372549, b: 0, a: 1}
+  - CardEffect: 2
+    EffectValue:
+      min: -0.2
+      max: -0.1
+    EffectDescription: ---
+    EffectTextColor: {r: 0.13725491, g: 0.5372549, b: 0, a: 1}
+  - CardEffect: 3
+    EffectValue:
+      min: 0.05
+      max: 0.1
+    EffectDescription: +
+    EffectTextColor: {r: 0.95294124, g: 0, b: 0, a: 1}
+  - CardEffect: 4
+    EffectValue:
+      min: 0.1
+      max: 0.2
+    EffectDescription: +++
+    EffectTextColor: {r: 0.95294124, g: 0, b: 0, a: 1}

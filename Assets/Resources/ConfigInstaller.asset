@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7dc047fe1274314fb16afe655eec2ad, type: 3}
+  m_Name: ConfigInstaller
+  m_EditorClassIdentifier: 
+  gaugesConfig: {fileID: 11400000, guid: c0abc0a898f61af4abafdd73e0d76769, type: 2}
+  commonStatsConfig: {fileID: 11400000, guid: 0630ed51eb4f55041951da98d0eb61db, type: 2}
+  deckConfig: {fileID: 11400000, guid: 63f484f350905424cbf3d33a9a615eaa, type: 2}
+  scoreConfig: {fileID: 11400000, guid: 0d0f1204aaaa32a48a1ab826918b6674, type: 2}
+  competitionConfig: {fileID: 11400000, guid: db36190c15c3ea544a9ec963a9d073e4, type: 2}
+  actorConfig: {fileID: 11400000, guid: 40e3724f21fbf7748868c6138b198c2b, type: 2}
+  sceneConfig: {fileID: 11400000, guid: 0617724a2c0233b458784d7c15f9d160, type: 2}

@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee22847fa72f4fbea2212fa993ddc3ac, type: 3}
+  m_Name: DefaultCardPackConfig
+  m_EditorClassIdentifier: 
+  cards:
+  - IconSprite: {fileID: 21300000, guid: 33e9dcd7ad31fb243b2d967d06defd78, type: 3}
+    TitleText: Went to Spain
+    DescriptionText: Monkey News - Karl tells a story about a little monkey highjacking
+      a car and driving to Spain.
+    CardEffects: 040000000000000001000000
+  - IconSprite: {fileID: 21300000, guid: 5719dfbbdbb56ca4db5dc2ad128eae65, type: 3}
+    TitleText: Man in Black 2
+    DescriptionText: Have you seen Man in Black 2 Steve? There is this... thing...
+      in it.
+    CardEffects: 010000000400000002000000
+  - IconSprite: {fileID: 21300000, guid: 4b4db8f25a54afb469ebd4e2f56a2c0c, type: 3}
+    TitleText: The Bid Lin
+    DescriptionText: Ricky attempts to place a bin lid on Karl's head.
+    CardEffects: 010000000000000004000000
+  - IconSprite: {fileID: 21300000, guid: fc8ab3fc715981b46ace3c4ce23729c6, type: 3}
+    TitleText: Old Man Eating a Twix
+    DescriptionText: Karl observes you never see an old man eating a twix. Ricky
+      and Steve can't but agree.
+    CardEffects: 010000000100000001000000
+  - IconSprite: {fileID: 21300000, guid: 4ca72e20ce4345349ae7f9c4800f0040, type: 3}
+    TitleText: Dinner at Bowie's
+    DescriptionText: Ricky talks about a dinner he got invited to at David Bowie's.
+      Steve feels left out.
+    CardEffects: 010000000400000000000000
+  - IconSprite: {fileID: 21300000, guid: b7c6c910c799a884e963b3a94b19d61b, type: 3}
+    TitleText: Song for the Ladies
+    DescriptionText: Steve plays a song.
+    CardEffects: 000000000100000000000000
+  - IconSprite: {fileID: 21300000, guid: ef4af0560bdbce749b87bd356bcb4a33, type: 3}
+    TitleText: Ricky's Cat
+    DescriptionText: Karl and Steve have a go at Ricky's cat.
+    CardEffects: 040000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: fd92f4cb82c762e4abc2713d744a2b69, type: 3}
+    TitleText: Little Yellow Thing
+    DescriptionText: Ricky has a fit of bad Only Fools and Horses impressions.
+    CardEffects: 000000000400000004000000
+  - IconSprite: {fileID: 21300000, guid: 5926a4d439db07f479c8023d92f434a5, type: 3}
+    TitleText: Rock Busters
+    DescriptionText: Three cryptic clues...
+    CardEffects: 040000000300000002000000
+  - IconSprite: {fileID: 21300000, guid: b82287590b8068745992f27c94d30952, type: 3}
+    TitleText: Man Moth
+    DescriptionText: Scientists discovered a way to clone a creature who can eat
+      an entire jacket in a day.
+    CardEffects: 030000000000000003000000
+  - IconSprite: {fileID: 21300000, guid: 36c17cc5299e5c94887dbb8bc374257b, type: 3}
+    TitleText: Tattoo Stan
+    DescriptionText: Karl tells about his uncle who's done all of his tattoos himself.
+      The ones on his right arm were rubbish.
+    CardEffects: 010000000100000000000000
+  - IconSprite: {fileID: 21300000, guid: ce0462971e9df5749ba0aa32b20754c1, type: 3}
+    TitleText: Oh, Forget It
+    DescriptionText: Karl refuses to finish a story.
+    CardEffects: 040000000300000000000000
+  - IconSprite: {fileID: 21300000, guid: d7a593d33a17d514eaec4a74a5e62d1b, type: 3}
+    TitleText: 50p
+    DescriptionText: Karl brings up the time he wouldn't give Steve his 50p back.
+    CardEffects: 000000000400000001000000
+  - IconSprite: {fileID: 21300000, guid: 53c4c4984163cdc49a2945a2daea7efb, type: 3}
+    TitleText: My Favourite Band
+    DescriptionText: Ricky plays a song from Radiohead/David Bowie/Feeder/The Darkness/Thin
+      Lizzie.
+    CardEffects: 020000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: a98d4e1763cfd34489f129930f2a1fc9, type: 3}
+    TitleText: Flanimals
+    DescriptionText: Ricky shamelessly plugs his book. Steve doesn't get a penny
+      out of that.
+    CardEffects: 010000000400000000000000
+  - IconSprite: {fileID: 21300000, guid: bdd1b37ca91d5e54bb95ec81920c8b8d, type: 3}
+    TitleText: Kidney Stones
+    DescriptionText: 'For god''s sake, me belly ache.
+
+      Ricky thinks Karl''s
+      being a crybaby.'
+    CardEffects: 030000000000000004000000
+  - IconSprite: {fileID: 21300000, guid: d41638d275938d24ca5e157fad331324, type: 3}
+    TitleText: DJing Gigs
+    DescriptionText: Steve and Karl reminisce about their DJing gigs. Ricky has nothing
+      to contribute.
+    CardEffects: 030000000200000002000000
+  - IconSprite: {fileID: 21300000, guid: e79110bd697f763428502a30a9ff452c, type: 3}
+    TitleText: Ricky and Steve Go Abroad
+    DescriptionText: Ricky and Steve have to leave for business. Karl has to create
+      links for the next show himself.
+    CardEffects: 010000000100000004000000
+  - IconSprite: {fileID: 21300000, guid: b6a011724a8cdbd4fb5d253360def69a, type: 3}
+    TitleText: The RAM Pack
+    DescriptionText: Karl has flashbacks from the time he got an incomplete Christmas
+      present.
+    CardEffects: 000000000000000004000000
+  - IconSprite: {fileID: 21300000, guid: cb9213eac564b1547965b9919519f6f7, type: 3}
+    TitleText: The Hangover
+    DescriptionText: Ricky is hungover from last night. The show's even shoddier
+      than usual.
+    CardEffects: 010000000300000003000000
+  - IconSprite: {fileID: 21300000, guid: a18d2d46420bfe345afce2ff6eac2f82, type: 3}
+    TitleText: The Futon
+    DescriptionText: Through the medium of radio Karl tries to sell his old furniture.
+      Ricky doesn't think it's appropriate.
+    CardEffects: 030000000000000002000000
+  - IconSprite: {fileID: 21300000, guid: ad57811111877c34b88f201a9c463389, type: 3}
+    TitleText: Bruce Springsteen
+    DescriptionText: Steve tries to get a ticket for Bruce Springsteen concert from
+      listeners. His pleas are met with poor response.
+    CardEffects: 000000000400000000000000
+  - IconSprite: {fileID: 21300000, guid: 858db1d0d72e01044987e83fb55f3d59, type: 3}
+    TitleText: Get a Lobe Of This
+    DescriptionText: Karl educates Ricky with a half fetched fact about a girl regaining
+      her hearing. Not even a bonus bee fact saves it.
+    CardEffects: 040000000000000003000000
+  - IconSprite: {fileID: 21300000, guid: 6c513c09d235315409df86588130921f, type: 3}
+    TitleText: O-levels
+    DescriptionText: Karl learns about his GCSE results. It wasn't Art or Maths,
+      it was an E in History.
+    CardEffects: 010000000000000004000000
+  - IconSprite: {fileID: 21300000, guid: f4e61153ec367d34bb31767babe91146, type: 3}
+    TitleText: The Infinity
+    DescriptionText: But have they read Shakespeare?
+    CardEffects: 040000000300000003000000
+  - IconSprite: {fileID: 21300000, guid: 79a65971c8f3f704e8ff8f39239241aa, type: 3}
+    TitleText: Wonderful Tonight
+    DescriptionText: Karl tries to convince others that the song is about a little
+      fella in a wheelchair.
+    CardEffects: 040000000300000001000000
+  - IconSprite: {fileID: 21300000, guid: 0531ce7b353dd6e47b7acb0918485d96, type: 3}
+    TitleText: Why?
+    DescriptionText: Karl reveals his methods of confusing computers.
+    CardEffects: 020000000200000001000000
+  - IconSprite: {fileID: 21300000, guid: 8bbe310b88339324baf7235e7c5db8f7, type: 3}
+    TitleText: Little Donkey
+    DescriptionText: Karl tells about his drumming performance in a school play.
+    CardEffects: 020000000200000001000000
+  - IconSprite: {fileID: 21300000, guid: 8d3f6622aa9a0024e848d8986b3d0be9, type: 3}
+    TitleText: Sony Award
+    DescriptionText: They didn't win the Sony Award again. Not that anyone is really
+      fussed.
+    CardEffects: 000000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: 1389371e56a9fa348ae812f67ff1a2c5, type: 3}
+    TitleText: Mondays Off
+    DescriptionText: Karl drives a hard bargain and negotiates Mondays off if he's
+      to stay the producer.
+    CardEffects: 040000000300000002000000
+  - IconSprite: {fileID: 21300000, guid: 6484740955fb073448b7f7d818e29c95, type: 3}
+    TitleText: The Haircut
+    DescriptionText: Karl vents about Suzanne's new haircut. She looks like Dave
+      Hill.
+    CardEffects: 010000000100000003000000
+  - IconSprite: {fileID: 21300000, guid: c8d1c38597f27f347869cf75ea14db97, type: 3}
+    TitleText: The Haircut Consequences
+    DescriptionText: Karl is stressed about Suzanne having heard him complaining
+      about her haircut. To his defense he did offer to pay for a new one.
+    CardEffects: 020000000100000004000000
+  - IconSprite: {fileID: 21300000, guid: 1a2adcf92324300498cab479eb209836, type: 3}
+    TitleText: Eating Paper
+    DescriptionText: Ricky stuffs various pieces of paper in his mouth.
+    CardEffects: 020000000400000003000000
+  - IconSprite: {fileID: 21300000, guid: ebaada6ba78aab742bc48bb8f7dc7d5f, type: 3}
+    TitleText: Burgers
+    DescriptionText: Karl is talked into attempting to beat the world record for
+      stuffing burgers in his mouth. He can't even get one in.
+    CardEffects: 030000000100000004000000
+  - IconSprite: {fileID: 21300000, guid: c4bd4988be970e54fb39ac65e569dff7, type: 3}
+    TitleText: The Pub Quiz
+    DescriptionText: Steve has a go at Karl for his poor performance on a pub quiz
+      night, even though he got Dannii Minogue right.
+    CardEffects: 030000000200000004000000
+  - IconSprite: {fileID: 21300000, guid: 7f833bc69372c1441af5902b03d227ba, type: 3}
+    TitleText: Parrot's Blood
+    DescriptionText: Karl tells the story from ages ago about a doctor consulting
+      his colleague from overseas.
+    CardEffects: 020000000000000001000000
+  - IconSprite: {fileID: 21300000, guid: 8d17a4b20af9b3b4e802bc95350fdad0, type: 3}
+    TitleText: The Go-kart
+    DescriptionText: Ricky tells a story about the time he got a go-kart.
+    CardEffects: 010000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: 8d17a4b20af9b3b4e802bc95350fdad0, type: 3}
+    TitleText: The Go-kart
+    DescriptionText: Ricky tells a story about the time he got a go-kart.
+    CardEffects: 010000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: 8d17a4b20af9b3b4e802bc95350fdad0, type: 3}
+    TitleText: The Go-kart
+    DescriptionText: Ricky tells a story about the time he got a go-kart.
+    CardEffects: 010000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: 8d17a4b20af9b3b4e802bc95350fdad0, type: 3}
+    TitleText: The Go-kart
+    DescriptionText: Ricky tells a story about the time he got a go-kart.
+    CardEffects: 010000000000000000000000
+  - IconSprite: {fileID: 21300000, guid: 67d7c67d3a1207f42946afc16a4b4d5a, type: 3}
+    TitleText: 'The Big-headed Lads '
+    DescriptionText: Karl talks about two lads from school with big heads and webbed
+      hands. Obviously they weren't hanging out with each other.
+    CardEffects: 010000000100000001000000
+  - IconSprite: {fileID: 21300000, guid: 4cc578ba3da1ee94d852c6b5a2877556, type: 3}
+    TitleText: XFamily Fortune
+    DescriptionText: Ricky and Steve try to introduce a new feature, but they lack
+      Karl's skill.
+    CardEffects: 010000000100000003000000
+  - IconSprite: {fileID: 21300000, guid: 6b8a8c1946f09d846bdf080bac7e954e, type: 3}
+    TitleText: Jonathan Ross
+    DescriptionText: How is he? Good?
+    CardEffects: 020000000400000000000000
+  - IconSprite: {fileID: 21300000, guid: 32b1e50f4082c0247875e4142ddf3a49, type: 3}
+    TitleText: Tube Escalators
+    DescriptionText: Karl reveals how much it costs to run all the London tube escalators.
+    CardEffects: 000000000000000001000000
+  - IconSprite: {fileID: 21300000, guid: ae24d74d4e9b67244892c3f1e3ec4f20, type: 3}
+    TitleText: The Elephant Man
+    DescriptionText: Karl talks about his favourite film.
+    CardEffects: 000000000000000001000000
+  - IconSprite: {fileID: 21300000, guid: 7dd54eab15fe99649a130fd84ed48dbb, type: 3}
+    TitleText: Paper Round
+    DescriptionText: Karl talks about the best job he's ever had. He was his own
+      boss.
+    CardEffects: 000000000000000001000000
+  - IconSprite: {fileID: 21300000, guid: 9180975d7cb8aca4b85204c5f39d6e31, type: 3}
+    TitleText: Room 101
+    DescriptionText: Ricky puts 'annoying people' in Room 101. Yet he's still here.
+    CardEffects: 020000000300000000000000
+  - IconSprite: {fileID: 21300000, guid: 04445fe3d570c2e448286f74f27e1aa6, type: 3}
+    TitleText: Before BAFTAs
+    DescriptionText: Steve talks about smuggling Karl to BAFTAs as his partner in
+      life.
+    CardEffects: 010000000200000003000000
+  - IconSprite: {fileID: 21300000, guid: 425a3ecad70eb044a9600a29aa39e5c1, type: 3}
+    TitleText: After BAFTAs
+    DescriptionText: Ricky and Steve don't think Karl appreciates them taking him
+      to BAFTAs.
+    CardEffects: 030000000400000001000000
+  - IconSprite: {fileID: 21300000, guid: 72bac6c14c0a0f545bc396bf568df850, type: 3}
+    TitleText: The Facts
+    DescriptionText: A listener sides with one of Karl's stories and supports it
+      with some kind of proof. And you can always trust an XFM listener. Ricky is
+      proven wrong.
+    CardEffects: 040000000000000002000000
+  - IconSprite: {fileID: 21300000, guid: b630bee72d84d9f449ac844a6b8070a8, type: 3}
+    TitleText: The Office On DVD
+    DescriptionText: An unusual prize is given out.
+    CardEffects: 010000000100000003000000
