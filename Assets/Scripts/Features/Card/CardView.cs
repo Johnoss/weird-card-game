@@ -7,6 +7,7 @@ using Assets.Scripts.Utilities.Extensions;
 using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
+using Assets.Scripts.Features.Audio;
 using TMPro;
 using UniRx;
 using UnityEngine;
@@ -53,6 +54,7 @@ namespace Assets.Scripts.Features.Card
         private Vector3 defaultAnchoredPosition;
         private Vector3 defaultRotation;
         private Vector3 defaultCardScale;
+        private AudioController audioController;
 
         private float PlaySequenceSeconds => drawCardTweenerConfig.GetDelaySecondsForIndex(cardModel.CardIndex) +
                                              drawCardTweenerConfig.AnimationDurationSeconds +
@@ -60,12 +62,13 @@ namespace Assets.Scripts.Features.Card
 
         [Inject]
         public void Construct(CardModel cardModel, CardController cardController, SelectedCardModel selectedCardModel,
-            Transform selectedCardParent)
+            AudioController audioController, Transform selectedCardParent)
         {
             this.cardModel = cardModel;
             this.selectedCardModel = selectedCardModel;
             this.cardController = cardController;
             this.selectedCardParent = selectedCardParent;
+            this.audioController = audioController;
 
             defaultAnchoredPosition = cardTransform.anchoredPosition;
             defaultRotation = cardTransform.localEulerAngles;
@@ -131,6 +134,7 @@ namespace Assets.Scripts.Features.Card
         {
             if (cardModel.IsSelected.Value)
             {
+                audioController.PlayClip(AudioEffectType.CardPlay);
                 cardController.PlayCard();
                 playCardTweener.Animate();
                 return;
@@ -165,6 +169,8 @@ namespace Assets.Scripts.Features.Card
             cardCoverImage.overrideSprite = cardData.IconSprite;
 
             drawCardTweener.Animate(cardModel.CardIndex);
+            audioController.PlayClip(AudioEffectType.CardDeal,
+                drawCardTweenerConfig.GetDelaySecondsForIndex(cardModel.CardIndex));
         }
 
         private void ResetCard()

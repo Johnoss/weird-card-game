@@ -13,7 +13,7 @@ namespace Assets.Scripts.Installers.GameScene
     {
         [SerializeField] private CardSlotsView cardSlotsView;
 
-        [Inject] private DeckConfig deckConfig;
+        [SerializeField] private DeckConfig deckConfig;
 
         public override void InstallBindings()
         {

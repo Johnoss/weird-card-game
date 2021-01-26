@@ -1,12 +1,12 @@
-﻿using Assets.Scripts.Features.Card.Config;
-using Assets.Scripts.Features.MVC;
-using JetBrains.Annotations;
-using System.Collections.Generic;
+﻿using Assets.Scripts.Features.Audio;
 using Assets.Scripts.Features.Card.Deck;
 using Assets.Scripts.Features.Card.Hand;
 using Assets.Scripts.Features.Card.SelectedCard;
 using Assets.Scripts.Features.Gauge;
 using Assets.Scripts.Features.Gauge.Config;
+using Assets.Scripts.Features.MVC;
+using JetBrains.Annotations;
+using System.Collections.Generic;
 using Zenject;
 
 namespace Assets.Scripts.Features.Card.Factory
@@ -24,6 +24,7 @@ namespace Assets.Scripts.Features.Card.Factory
         [Inject] private SelectedCardModel selectedCardModel;
 
         [Inject] private SelectedCardController selectedCardController;
+        [Inject] private AudioController audioController;
 
         public List<MCBundle<CardModel, CardController>> CreateCards()
         {
@@ -51,7 +52,7 @@ namespace Assets.Scripts.Features.Card.Factory
             var cardParent = cardSlotsView.CardSlots[slotIndex];
 
             var model = new CardModel(slotIndex, commonStatsConfig);
-            var controller = new CardController(model, selectedCardController, selectedCardModel);
+            var controller = new CardController(model, selectedCardController, audioController, selectedCardModel);
             var view = cardViewFactory.Create(model, controller, selectedCardModel, cardSlotsView.SelectedCardParent);
             view.transform.SetParent(cardParent, false);
 

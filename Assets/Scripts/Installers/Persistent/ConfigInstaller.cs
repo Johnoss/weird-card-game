@@ -1,4 +1,5 @@
 using Assets.Scripts.Features.Actor.Config;
+using Assets.Scripts.Features.Audio.Config;
 using Assets.Scripts.Features.Card.Config;
 using Assets.Scripts.Features.Gauge.Config;
 using Assets.Scripts.Features.Opponents.Config;
@@ -7,7 +8,7 @@ using Assets.Scripts.Features.Score.Config;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Assets.Scripts.Installers.Persistent
 {
     [CreateAssetMenu(fileName = "ConfigInstaller", menuName = "Installers/ConfigInstaller")]
     public class ConfigInstaller : ScriptableObjectInstaller<ConfigInstaller>
@@ -19,6 +20,7 @@ namespace Assets.Scripts.Installers.GameScene
         [SerializeField] private CompetitionConfig competitionConfig;
         [SerializeField] private ActorConfig actorConfig;
         [SerializeField] private SceneConfig sceneConfig;
+        [SerializeField] private AudioConfig audioConfig;
 
         public override void InstallBindings()
         {
@@ -29,6 +31,7 @@ namespace Assets.Scripts.Installers.GameScene
             Container.BindInstance(competitionConfig);
             Container.BindInstance(actorConfig);
             Container.BindInstance(sceneConfig);
+            Container.BindInstance(audioConfig);
         }
     }
 }

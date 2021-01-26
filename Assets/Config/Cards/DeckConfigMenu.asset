@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12eca985a4694b5eb4cd91ed20cbbf2f, type: 3}
-  m_Name: DeckGameConfig
+  m_Name: DeckConfigMenu
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 4307815155786212750, guid: 899889d47e535764a9f6299522a1362e,
     type: 3}
@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 76c94067a5abc534ab4cfea307015bec, type: 3}
   - {fileID: 21300000, guid: f9698824c5fa9af49ac6bc3a3d22ceee, type: 3}
   handArcRotationRange:
-    min: -12
-    max: 12
-  handSize: 3
+    min: -5
+    max: 5
+  handSize: 2
   cardPack: {fileID: 11400000, guid: d6fcc7ae0abea714ea435dc10e2bd23d, type: 2}

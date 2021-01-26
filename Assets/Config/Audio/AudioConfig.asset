@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1417d465ad47ffa5b47841f2c51702, type: 3}
+  m_Name: AudioConfig
+  m_EditorClassIdentifier: 
+  effectSettings:
+  - AudioEffect: 0
+    AudioClips:
+    - {fileID: 8300000, guid: 883a4db148e8c194bbe9fac66ea2bbe0, type: 3}
+    - {fileID: 8300000, guid: ceb793c56eb5ba7419d44c8247308a70, type: 3}
+    - {fileID: 8300000, guid: 610016b2a2bd38648a393dcb6af75e57, type: 3}
+    - {fileID: 8300000, guid: ab9105aecee77fc46b8cd1b7aa6f67a6, type: 3}
+    - {fileID: 8300000, guid: 7260c98432341c943b53f8808d063474, type: 3}
+    - {fileID: 8300000, guid: 160a1635cc23eca4ea32ccdf10ba7ed8, type: 3}
+    PitchOffsetRange:
+      min: -0.1
+      max: 0.1

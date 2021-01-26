@@ -1,3 +1,4 @@
+using Assets.Scripts.Features.Audio;
 using Assets.Scripts.Features.Card.SelectedCard;
 using Assets.Scripts.Features.MVC;
 using UniRx;
@@ -9,14 +10,16 @@ namespace Assets.Scripts.Features.Card
     {
         private readonly CardModel cardModel;
         private readonly SelectedCardController selectedCardController;
+        private readonly AudioController audioController;
 
         private readonly CompositeDisposable suspendDisposer;
 
         public CardController(CardModel cardModel, SelectedCardController selectedCardController,
-            SelectedCardModel selectedCardModel)
+            AudioController audioController, SelectedCardModel selectedCardModel)
         {
             this.cardModel = cardModel;
             this.selectedCardController = selectedCardController;
+            this.audioController = audioController;
 
             suspendDisposer = new CompositeDisposable();
 
