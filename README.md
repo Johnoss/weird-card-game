@@ -1,3 +1,11 @@
+![cover](https://i.imgur.com/M7jgqeZ.png " ")
+
+# Play in browser
+- http://xfmsimulator.com/
+- Tested mostly in Chrome, make sure you have WebGL enabled. [Here is how](https://www.interplaylearning.com/help/how-to-enable-webgl-in-chrome)
+- Technically runs in mobile browsers, but the controls are optimised for mouse (touch support and mobile aspect ratio optimization coming soon)
+
+
 The project is opensource, but it is reliant one some external plugins (that are opensource as well, I hope, otherwise I'm in a lot of trouble)
 
 # XFM Simulator
