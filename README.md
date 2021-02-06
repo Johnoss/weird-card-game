@@ -5,6 +5,8 @@ The project is opensource, but it is reliant one some external plugins (that are
 Dedicated to r/rickygervais reddit community. Full of references from the 20 year old tinpot radio show hosted by Ricky Gervais, Steve Merchant and a little round headed Manc with a head like an fucking orange called Karl Pilkington. Without context it might seem far fetched and bizarre (Monkey driving off to Spain?). That's ok, it doesn't make more sense even with the context.
 
 ## Usability
+**Unity version: 2019.4.11f1**
+
 Despite the twaddle that the content is, the architecture is fairly generic, could be used as a foundation for a game with similar mechanics.
 
 Third party addons used
