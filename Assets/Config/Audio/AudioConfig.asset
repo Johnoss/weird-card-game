@@ -24,3 +24,14 @@ MonoBehaviour:
     PitchOffsetRange:
       min: -0.1
       max: 0.1
+  - AudioEffect: 1
+    AudioClips:
+    - {fileID: 8300000, guid: 883a4db148e8c194bbe9fac66ea2bbe0, type: 3}
+    - {fileID: 8300000, guid: ceb793c56eb5ba7419d44c8247308a70, type: 3}
+    - {fileID: 8300000, guid: 610016b2a2bd38648a393dcb6af75e57, type: 3}
+    - {fileID: 8300000, guid: ab9105aecee77fc46b8cd1b7aa6f67a6, type: 3}
+    - {fileID: 8300000, guid: 7260c98432341c943b53f8808d063474, type: 3}
+    - {fileID: 8300000, guid: 160a1635cc23eca4ea32ccdf10ba7ed8, type: 3}
+    PitchOffsetRange:
+      min: -0.1
+      max: 0.1
