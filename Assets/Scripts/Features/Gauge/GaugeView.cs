@@ -22,7 +22,7 @@ namespace Assets.Scripts.Features.Gauge
         [SerializeField] private GaugeTweener gaugeTweener;
 
         [Header("Config")]
-        [SerializeField] CommonStatsConfig commonStatsConfig;
+        [SerializeField] private CommonStatsConfig commonStatsConfig;
 
         private GaugeModel gaugeModel;
         private GaugesConfig.GaugeSetting gaugeSetting;

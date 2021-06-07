@@ -52,7 +52,7 @@ namespace Assets.Scripts.Features.Score
         private void UpdateOrder()
         {
             var order = scoreModel.Order.Value;
-            var targetAnchoredY = -65 * (order - 1); //TODO proper positioning
+            var targetAnchoredY = -185 * (order - 1); //TODO proper positioning
             scoreOrderTweener.Animate(targetAnchoredY);
 
             var formattedName = $"{order}. {scoreModel.PlayerName}";
