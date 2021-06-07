@@ -49,6 +49,7 @@ namespace Assets.Scripts.Features.Card
         {
             Observable.TimerFrame(1)
                 .Take(1)
+                .Where(_ => cardSlotsView.CardSlots.Count > index)
                 .Subscribe(_ => transform.SetParent(cardSlotsView.CardSlots[index], false)).AddTo(this);
 
             Setup();
