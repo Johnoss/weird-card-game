@@ -55,7 +55,8 @@ namespace Features.Card
                 return;
             }
 
-            var reactionExpression = gaugeSetting.ReactionSettings.FirstOrDefault(reaction => reaction.Effect == effect)?.ReactionSprite;
+            var reactionExpression = gaugeSetting.ReactionSettings.FirstOrDefault(reaction => reaction.Effect == effect)
+                ?.ReactionSprite;
             var effectSetting = commonStatsConfig.GetEffectSetting(effect);
 
             effectWeightText.text = effectSetting.EffectDescription;

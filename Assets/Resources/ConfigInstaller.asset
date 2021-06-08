@@ -20,3 +20,4 @@ MonoBehaviour:
   actorConfig: {fileID: 11400000, guid: 40e3724f21fbf7748868c6138b198c2b, type: 2}
   sceneConfig: {fileID: 11400000, guid: 0617724a2c0233b458784d7c15f9d160, type: 2}
   audioConfig: {fileID: 11400000, guid: c4eb5fa0a7d5b6e4ba39c6391205758b, type: 2}
+  gesturesConfig: {fileID: 11400000, guid: 042b23ef48340c047952ebf2a7a12f23, type: 2}

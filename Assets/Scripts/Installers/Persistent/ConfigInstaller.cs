@@ -21,6 +21,7 @@ namespace Installers.Persistent
         [SerializeField] private ActorConfig actorConfig;
         [SerializeField] private SceneConfig sceneConfig;
         [SerializeField] private AudioConfig audioConfig;
+        [SerializeField] private GesturesConfig gesturesConfig;
 
         public override void InstallBindings()
         {
@@ -32,6 +33,7 @@ namespace Installers.Persistent
             Container.BindInstance(actorConfig);
             Container.BindInstance(sceneConfig);
             Container.BindInstance(audioConfig);
+            Container.BindInstance(gesturesConfig);
         }
     }
 }

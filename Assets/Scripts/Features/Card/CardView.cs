@@ -19,7 +19,9 @@ namespace Features.Card
     public class CardView : AbstractView
     {
         [UsedImplicitly]
-        public class ViewFactory : PlaceholderFactory<CardModel, CardController, SelectedCardModel, Transform, CardView> { }
+        public class ViewFactory : PlaceholderFactory<CardModel, CardController, SelectedCardModel, CardGesturesModel,
+            DraggableController, Transform, CardView>
+        { }
 
         [Header("Visuals")]
         [SerializeField] private TextMeshProUGUI cardTitleText;
@@ -30,9 +32,7 @@ namespace Features.Card
         [Header("Components")]
         [SerializeField] private RectTransform cardTransform;
         [SerializeField] private List<EffectTooltipView> effectViews;
-
-        [Header("Interaction")]
-        [SerializeField] private Button cardButton;
+        [SerializeField] private DraggableView draggableView;
 
         [Header("Animation")]
         [SerializeField] private TranslateToParentTweener selectedCardTweener;
@@ -48,13 +48,16 @@ namespace Features.Card
 
         private CardModel cardModel;
         private SelectedCardModel selectedCardModel;
+        private CardGesturesModel cardGesturesModel;
         private CardController cardController;
+        private SelectedCardController selectedCardController;
         private Transform selectedCardParent;
 
         private Vector3 defaultAnchoredPosition;
         private Vector3 defaultRotation;
         private Vector3 defaultCardScale;
         private AudioController audioController;
+        private DraggableController draggableController;
 
         private float PlaySequenceSeconds => drawCardTweenerConfig.GetDelaySecondsForIndex(cardModel.CardIndex) +
                                              drawCardTweenerConfig.AnimationDurationSeconds +
@@ -62,13 +65,18 @@ namespace Features.Card
 
         [Inject]
         public void Construct(CardModel cardModel, CardController cardController, SelectedCardModel selectedCardModel,
-            AudioController audioController, Transform selectedCardParent)
+            CardGesturesModel cardGesturesModel, AudioController audioController,
+            DraggableController draggableController, SelectedCardController selectedCardController,
+            Transform selectedCardParent)
         {
             this.cardModel = cardModel;
             this.selectedCardModel = selectedCardModel;
+            this.cardGesturesModel = cardGesturesModel;
             this.cardController = cardController;
             this.selectedCardParent = selectedCardParent;
             this.audioController = audioController;
+            this.draggableController = draggableController;
+            this.selectedCardController = selectedCardController;
 
             defaultAnchoredPosition = cardTransform.anchoredPosition;
             defaultRotation = cardTransform.localEulerAngles;
@@ -83,7 +91,11 @@ namespace Features.Card
             {
                 effectViews[i].Setup(cardModel, i);
             }
+            
+            draggableView.Setup(draggableController);
 
+            SubscribeGestures();
+            
             cardModel.CardData
                 .Where(data => data != null)
                 .Take(1)
@@ -93,8 +105,6 @@ namespace Features.Card
                 .Skip(2)
                 .Delay(TimeSpan.FromSeconds(playCardTweenerConfig.AnimationDurationSeconds))
                 .Subscribe(_ => UpdateCard()).AddTo(this);
-
-            cardButton.OnClickAsObservable().Subscribe(_ => OnCardClicked()).AddTo(this);
 
             selectedCardModel
                 .OnPlaySelectedCard
@@ -116,13 +126,36 @@ namespace Features.Card
             ResetCard();
         }
 
-        [UsedImplicitly]
-        public void OnCardHovered()
+        private void SubscribeGestures()
         {
-            if (!cardModel.IsSuspended.Value)
+            cardGesturesModel.OnSwipe.Subscribe(OnCardSwiped).AddTo(this);
+        }
+
+        private void OnCardSwiped(SwipeDirection swipeDirection)
+        {
+            switch (swipeDirection)
             {
-                cardController.SelectCard();
+                case SwipeDirection.Up:
+                    OnCardUp();
+                    break;
+                case SwipeDirection.Right:
+                    OffsetSelectedCard(1);
+                    break;
+                case SwipeDirection.Down:
+                    selectedCardController.DeselectCard();
+                    break;
+                case SwipeDirection.Left:
+                    OffsetSelectedCard(-1);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(swipeDirection), swipeDirection, null);
             }
+        }
+
+        private void OffsetSelectedCard(int offset)
+        {
+            var newIndex = (int) Mathf.Repeat(cardModel.CardIndex + offset, deckConfig.HandSize);
+            selectedCardController.SetSelectedCard(newIndex);
         }
 
         private void ResetTweener()
@@ -130,7 +163,7 @@ namespace Features.Card
             selectedCardTweener.ResetTweeners();
         }
 
-        private void OnCardClicked()
+        private void OnCardUp()
         {
             if (cardModel.IsSelected.Value)
             {
@@ -139,8 +172,8 @@ namespace Features.Card
                 playCardTweener.Animate();
                 return;
             }
-
-            OnCardHovered();
+            
+            cardController.SelectCard();
         }
 
         private void UpdateIsSelected()

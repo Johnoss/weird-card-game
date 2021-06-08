@@ -22,7 +22,8 @@ namespace Installers.GameScene
             Container.BindInstance(cardSlotsView);
 
             Container
-                .BindFactory<CardModel, CardController, SelectedCardModel, Transform, CardView, CardView.ViewFactory>()
+                .BindFactory<CardModel, CardController, SelectedCardModel, CardGesturesModel, DraggableController,
+                    Transform, CardView, CardView.ViewFactory>()
                 .FromComponentInNewPrefab(deckConfig.CardPrefab);
 
             InstallDeck();

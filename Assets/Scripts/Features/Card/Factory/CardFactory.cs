@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Features.Audio;
+using Features.Card.Config;
 using Features.Card.Deck;
 using Features.Card.Hand;
 using Features.Card.SelectedCard;
@@ -19,6 +20,7 @@ namespace Features.Card.Factory
         [Inject] private CardSlotsView cardSlotsView;
 
         [Inject] private CommonStatsConfig commonStatsConfig;
+        [Inject] private GesturesConfig gesturesConfig;
 
         [Inject] private DeckModel deckModel;
         [Inject] private SelectedCardModel selectedCardModel;
@@ -51,13 +53,32 @@ namespace Features.Card.Factory
         {
             var cardParent = cardSlotsView.CardSlots[slotIndex];
 
+            var draggableBundle = CreateDraggableBundle();
+            var gestureBundle = CreateGestureBundle(draggableBundle.Model);
+            
             var model = new CardModel(slotIndex, commonStatsConfig);
             var controller = new CardController(model, selectedCardController, audioController, selectedCardModel);
-            var view = cardViewFactory.Create(model, controller, selectedCardModel, cardSlotsView.SelectedCardParent);
+            var view = cardViewFactory.Create(model, controller, selectedCardModel, gestureBundle.Model,
+                draggableBundle.Controller, cardSlotsView.SelectedCardParent);
+            
             view.transform.SetParent(cardParent, false);
 
             var cardBundle = new MCBundle<CardModel, CardController>(model, controller);
             return cardBundle;
+        }
+
+        private MCBundle<CardGesturesModel, CardGesturesController> CreateGestureBundle(DraggableModel draggableModel)
+        {
+            var gestureModel = new CardGesturesModel();
+            var gestureController = new CardGesturesController(draggableModel, gestureModel, gesturesConfig);
+            return new MCBundle<CardGesturesModel, CardGesturesController>(gestureModel, gestureController);
+        }
+
+        private MCBundle<DraggableModel, DraggableController> CreateDraggableBundle()
+        {
+            var draggableModel = new DraggableModel();
+            var draggableController = new DraggableController(draggableModel);
+            return new MCBundle<DraggableModel, DraggableController>(draggableModel, draggableController);
         }
     }
 }
