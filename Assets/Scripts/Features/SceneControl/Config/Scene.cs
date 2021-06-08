@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Features.SceneControl.Config
+namespace Features.SceneControl.Config
 {
     public enum Scene
     {

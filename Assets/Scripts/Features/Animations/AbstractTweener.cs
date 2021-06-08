@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations
+namespace Features.Animations
 {
     public abstract class AbstractTweener : MonoBehaviour
     {

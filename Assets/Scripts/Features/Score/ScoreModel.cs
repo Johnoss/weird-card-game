@@ -1,9 +1,9 @@
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     [UsedImplicitly]
     public class ScoreModel : AbstractModel, IScoreModel

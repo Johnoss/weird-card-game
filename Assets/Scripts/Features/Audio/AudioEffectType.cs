@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Features.Audio
+namespace Features.Audio
 {
     public enum AudioEffectType
     {

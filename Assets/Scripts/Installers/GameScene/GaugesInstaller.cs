@@ -1,10 +1,10 @@
-using Assets.Scripts.Features.Gauge;
-using Assets.Scripts.Features.Gauge.Config;
-using Assets.Scripts.Features.Gauge.Factory;
+using Features.Gauge;
+using Features.Gauge.Config;
+using Features.Gauge.Factory;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Installers.GameScene
 {
     public class GaugesInstaller : MonoInstaller
     {

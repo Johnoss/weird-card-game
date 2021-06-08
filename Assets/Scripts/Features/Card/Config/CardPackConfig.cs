@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Assets.Scripts.Features.Card.Effects;
+using Features.Card.Effects;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Card.Config
+namespace Features.Card.Config
 {
     [CreateAssetMenu(fileName = "CardPackConfig", menuName = "Config/CardPackConfig")]
     public class CardPackConfig : ScriptableObject

@@ -1,7 +1,7 @@
 using UniRx;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     public interface IScoreModel
     {

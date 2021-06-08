@@ -1,11 +1,11 @@
-using Assets.Scripts.Features.Card.Deck;
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.MVC;
+using Features.Card.Deck;
+using Features.Card.SelectedCard;
+using Features.Gauge;
+using Features.MVC;
 using JetBrains.Annotations;
-using Assets.Scripts.Features.Gauge;
 using UniRx;
 
-namespace Assets.Scripts.Features.Card.Hand
+namespace Features.Card.Hand
 {
     [UsedImplicitly]
     public class HandController : AbstractController

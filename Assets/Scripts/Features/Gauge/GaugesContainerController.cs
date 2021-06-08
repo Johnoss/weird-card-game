@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Assets.Scripts.Features.Card.Effects;
-using Assets.Scripts.Features.MVC;
+using Features.Card.Effects;
+using Features.MVC;
 
-namespace Assets.Scripts.Features.Gauge
+namespace Features.Gauge
 {
     public class GaugesContainerController : AbstractController
     {

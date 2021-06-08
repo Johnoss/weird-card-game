@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Utilities.Ranged_Float;
 
-namespace Assets.Scripts.Features.Card.Config
+namespace Features.Card.Config
 {
     [CreateAssetMenu(fileName = "DeckConfig", menuName = "Config/DeckConfig")]
     public class DeckConfig : ScriptableObject

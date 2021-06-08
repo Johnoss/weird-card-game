@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.UI;
+using Features.UI;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Installers.GameScene
 {
     public class UIInstaller : MonoInstaller
     {

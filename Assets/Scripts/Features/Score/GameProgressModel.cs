@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Features.MVC;
+﻿using Features.MVC;
 using JetBrains.Annotations;
 using UniRx;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     [UsedImplicitly]
     public class GameProgressModel : AbstractModel

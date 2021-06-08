@@ -1,6 +1,7 @@
 using UnityEngine;
+using Utilities.Ranged_Float;
 
-namespace Assets.Scripts.Features.Opponents.Config
+namespace Features.Opponents.Config
 {
     [CreateAssetMenu(fileName = "OpponentConfig", menuName = "Config/OpponentConfig")]
     public class OpponentConfig : ScriptableObject

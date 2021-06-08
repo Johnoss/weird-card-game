@@ -1,15 +1,15 @@
-using Assets.Scripts.Features.Animations.Card.Config;
-using Assets.Scripts.Features.Card.Effects;
-using Assets.Scripts.Features.Gauge.Config;
-using Assets.Scripts.Features.MVC;
 using System;
 using System.Linq;
+using Features.Animations.Card.Config;
+using Features.Card.Effects;
+using Features.Gauge.Config;
+using Features.MVC;
 using TMPro;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.Features.Card
+namespace Features.Card
 {
     public class EffectTooltipView : AbstractView
     {

@@ -1,11 +1,11 @@
 using System;
-using Assets.Scripts.Features.Animations.SceneTransition;
-using Assets.Scripts.Features.Animations.SceneTransition.Config;
-using Assets.Scripts.Features.MVC;
+using Features.Animations.SceneTransition;
+using Features.Animations.SceneTransition.Config;
+using Features.MVC;
 using UniRx;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.SceneControl
+namespace Features.SceneControl
 {
     public class SceneTransitionView : AbstractView
     {

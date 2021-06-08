@@ -1,6 +1,7 @@
 using UnityEngine;
+using Utilities.Ranged_Float;
 
-namespace Assets.Scripts.Features.Score.Config
+namespace Features.Score.Config
 {
     [CreateAssetMenu(fileName = "ScoreConfig", menuName = "Config/ScoreConfig")]
     public class ScoreConfig : ScriptableObject

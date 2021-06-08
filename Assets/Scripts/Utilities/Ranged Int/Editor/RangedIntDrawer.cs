@@ -38,60 +38,63 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomPropertyDrawer(typeof(RangedInt))]
-public class RangedIntDrawer : PropertyDrawer
+namespace Utilities.Ranged_Int.Editor
 {
-    //------------------------------------------------------------------------------------//
-    //----------------------------------- FIELDS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    private const int _AMOUNT_OF_ITEMS = 1;
-    private readonly float _spacerHeight = 20f;
-    private readonly float _lineHeight = 16f;
-    private string _name = string.Empty;
-    private string _tooltip = string.Empty;
-    private bool _cache = false;
-
-    //------------------------------------------------------------------------------------//
-    //---------------------------------- METHODS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    [CustomPropertyDrawer(typeof(RangedInt))]
+    public class RangedIntDrawer : PropertyDrawer
     {
-        return _AMOUNT_OF_ITEMS * _spacerHeight;
-    }//End of GetPropertyHeight(SerializedProperty property, GUIContent label)
+        //------------------------------------------------------------------------------------//
+        //----------------------------------- FIELDS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
 
-    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
-    {
-        EditorGUIUtility.labelWidth /= 4f;
-        position.height = _lineHeight;
-        position.width /= 4f;
+        private const int _AMOUNT_OF_ITEMS = 1;
+        private readonly float _spacerHeight = 20f;
+        private readonly float _lineHeight = 16f;
+        private string _name = string.Empty;
+        private string _tooltip = string.Empty;
+        private bool _cache = false;
 
-        if (!_cache)
+        //------------------------------------------------------------------------------------//
+        //---------------------------------- METHODS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            //get the name before it's gone
-            _name = property.displayName;
-            _tooltip = property.tooltip;
+            return _AMOUNT_OF_ITEMS * _spacerHeight;
+        }//End of GetPropertyHeight(SerializedProperty property, GUIContent label)
 
-            _cache = true;
-        }
+        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+        {
+            EditorGUIUtility.labelWidth /= 4f;
+            position.height = _lineHeight;
+            position.width /= 4f;
 
-        EditorGUI.PrefixLabel(position, new GUIContent(_name,
-            string.Format("Base Tooltip: {0}", _tooltip.Equals(string.Empty) ? "" : string.Format("\n\n{0}'s Tooltip:\n{1}", _name, _tooltip))));
+            if (!_cache)
+            {
+                //get the name before it's gone
+                _name = property.displayName;
+                _tooltip = property.tooltip;
 
-        position.x += position.width;
+                _cache = true;
+            }
 
-        position.width *= 4f;
-        position.width *= 0.375f;
+            EditorGUI.PrefixLabel(position, new GUIContent(_name,
+                string.Format("Base Tooltip: {0}", _tooltip.Equals(string.Empty) ? "" : string.Format("\n\n{0}'s Tooltip:\n{1}", _name, _tooltip))));
 
-        EditorGUI.PropertyField(position, property.FindPropertyRelative("min"),
-            new GUIContent("Min"));
+            position.x += position.width;
 
-        position.x += position.width;
+            position.width *= 4f;
+            position.width *= 0.375f;
 
-        EditorGUI.PropertyField(position, property.FindPropertyRelative("max"),
-            new GUIContent("Max"));
+            EditorGUI.PropertyField(position, property.FindPropertyRelative("min"),
+                new GUIContent("Min"));
 
-    }//End of OnGUI()
+            position.x += position.width;
 
+            EditorGUI.PropertyField(position, property.FindPropertyRelative("max"),
+                new GUIContent("Max"));
+
+        }//End of OnGUI()
+
+    }
 }//End of class

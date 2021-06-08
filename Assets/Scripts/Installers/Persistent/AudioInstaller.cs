@@ -1,8 +1,8 @@
-using Assets.Scripts.Features.Audio;
+using Features.Audio;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.Persistent
+namespace Installers.Persistent
 {
     public class AudioInstaller : MonoInstaller
     {

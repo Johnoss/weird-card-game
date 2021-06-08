@@ -1,13 +1,13 @@
-﻿using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.Gauge;
-using Assets.Scripts.Features.Opponents.Config;
-using Assets.Scripts.Features.Score.Config;
+﻿using System.Collections.Generic;
+using Features.Card.SelectedCard;
+using Features.Gauge;
+using Features.Opponents.Config;
+using Features.Score.Config;
 using JetBrains.Annotations;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Features.Score.Factory
+namespace Features.Score.Factory
 {
     [UsedImplicitly]
     public class ScoreFactory

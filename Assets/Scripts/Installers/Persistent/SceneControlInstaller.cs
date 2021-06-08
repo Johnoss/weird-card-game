@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.SceneControl;
+using Features.SceneControl;
 using Zenject;
 
-namespace Assets.Scripts.Installers.Persistent
+namespace Installers.Persistent
 {
     public class SceneControlInstaller : MonoInstaller
     {

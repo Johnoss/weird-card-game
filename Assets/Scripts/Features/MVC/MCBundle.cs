@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Features.MVC
+﻿namespace Features.MVC
 {
     public class MCBundle<TModel, TController>
         where TModel : AbstractModel

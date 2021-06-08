@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using UniRx;
 
-namespace Assets.Scripts.Features.UI
+namespace Features.UI
 {
     public class UIModel : AbstractModel
     {

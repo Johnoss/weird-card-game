@@ -1,10 +1,10 @@
 ﻿using System.Linq;
-using Assets.Scripts.Features.Gauge.Config;
-using Assets.Scripts.Features.MVC;
+using Features.Gauge.Config;
+using Features.MVC;
 using JetBrains.Annotations;
 using Zenject;
 
-namespace Assets.Scripts.Features.Gauge.Factory
+namespace Features.Gauge.Factory
 {
     [UsedImplicitly]
     public class GaugeFactory

@@ -1,16 +1,16 @@
-﻿using Assets.Scripts.Features.Animations.Card;
-using Assets.Scripts.Features.Animations.SceneTransition.Config;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.SceneControl;
-using Assets.Scripts.Features.SceneControl.Config;
-using Assets.Scripts.Features.UI;
+﻿using Features.Animations.Card;
+using Features.Animations.SceneTransition.Config;
+using Features.MVC;
+using Features.SceneControl;
+using Features.SceneControl.Config;
+using Features.UI;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     public class GameSummaryView : AbstractView
     {

@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Features.Animations.Card.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Card.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Card
+namespace Features.Animations.Card
 {
     [RequireComponent(typeof(RectTransform))]
     public class DrawCardTweener : AbstractTweener

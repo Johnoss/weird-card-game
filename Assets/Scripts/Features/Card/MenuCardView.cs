@@ -1,19 +1,19 @@
-using Assets.Scripts.Features.Animations.Card;
-using Assets.Scripts.Features.Animations.SceneTransition.Config;
-using Assets.Scripts.Features.Card.Hand;
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.Gauge;
-using Assets.Scripts.Features.Gauge.Config;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.SceneControl;
-using Assets.Scripts.Features.SceneControl.Config;
+using Features.Animations.Card;
+using Features.Animations.SceneTransition.Config;
+using Features.Card.Hand;
+using Features.Card.SelectedCard;
+using Features.Gauge;
+using Features.Gauge.Config;
+using Features.MVC;
+using Features.SceneControl;
+using Features.SceneControl.Config;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Scripts.Features.Card
+namespace Features.Card
 {
     public class MenuCardView : AbstractView, IInitializable
     {

@@ -39,38 +39,41 @@
 
 using UnityEngine;
 
-[System.Serializable]
-public class RangedFloatAttribute : PropertyAttribute
+namespace Utilities.Ranged_Float
 {
-
-    //------------------------------------------------------------------------------------//
-    //----------------------------- ENUM DECLARATIONS ------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public enum RangeDisplayType // [1]
+    [System.Serializable]
+    public class RangedFloatAttribute : PropertyAttribute
     {
-        LockedRanges,
-        EditableRanges,
-        HideRanges
+
+        //------------------------------------------------------------------------------------//
+        //----------------------------- ENUM DECLARATIONS ------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public enum RangeDisplayType // [1]
+        {
+            LockedRanges,
+            EditableRanges,
+            HideRanges
+        }
+
+        //------------------------------------------------------------------------------------//
+        //----------------------------------- FIELDS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public float max;
+        public float min;
+        public RangeDisplayType rangeDisplayType;
+
+        //------------------------------------------------------------------------------------//
+        //---------------------------------- METHODS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public RangedFloatAttribute(float min, float max, RangeDisplayType rangeDisplayType = RangeDisplayType.LockedRanges)
+        {
+            this.min = min;
+            this.max = max;
+            this.rangeDisplayType = rangeDisplayType;
+        }//End of RangedFloatAttribute()
+
     }
-
-    //------------------------------------------------------------------------------------//
-    //----------------------------------- FIELDS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public float max;
-    public float min;
-    public RangeDisplayType rangeDisplayType;
-
-    //------------------------------------------------------------------------------------//
-    //---------------------------------- METHODS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public RangedFloatAttribute(float min, float max, RangeDisplayType rangeDisplayType = RangeDisplayType.LockedRanges)
-    {
-        this.min = min;
-        this.max = max;
-        this.rangeDisplayType = rangeDisplayType;
-    }//End of RangedFloatAttribute()
-
 }//End of class

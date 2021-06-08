@@ -1,11 +1,11 @@
-﻿using Assets.Scripts.Features.SceneControl;
+﻿using System.Collections;
+using Features.SceneControl;
 using JetBrains.Annotations;
-using System.Collections;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Features.Initializers
+namespace Features.Initializers
 {
     [UsedImplicitly]
     public class MenuInitializer : IInitializable

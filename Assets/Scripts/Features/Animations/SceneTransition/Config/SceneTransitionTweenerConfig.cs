@@ -1,8 +1,8 @@
-using Assets.Scripts.Features.Animations.Config;
 using DG.Tweening;
+using Features.Animations.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.SceneTransition.Config
+namespace Features.Animations.SceneTransition.Config
 {
     [CreateAssetMenu(fileName = "SceneTransitionTweenerConfig", menuName = "Tweener/SceneTransitionTweenerConfig")]
     public class SceneTransitionTweenerConfig : AbstractTweenerConfig

@@ -1,7 +1,8 @@
-using Assets.Scripts.Features.Animations.Config;
+using Features.Animations.Config;
 using UnityEngine;
+using Utilities.Ranged_Float;
 
-namespace Assets.Scripts.Features.Animations.Card.Config
+namespace Features.Animations.Card.Config
 {
     [CreateAssetMenu(fileName = "PlayCardTweenerConfig", menuName = "Tweener/PlayCardTweenerConfig")]
     public class PlayCardTweenerConfig : AbstractTweenerConfig

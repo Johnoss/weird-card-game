@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.Initializers;
+using Features.Initializers;
 using Zenject;
 
-namespace Assets.Scripts.Installers.EditScene
+namespace Installers.EditScene
 {
     public class EditSceneInstaller : MonoInstaller
     {

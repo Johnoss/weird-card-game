@@ -1,11 +1,11 @@
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.Opponents.Config;
-using Assets.Scripts.Utilities.Extensions;
+using Features.Card.SelectedCard;
+using Features.MVC;
+using Features.Opponents.Config;
 using UniRx;
 using UnityEngine;
+using Utilities.Extensions;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     public class MockScoreController : AbstractController, IScoreController
     {

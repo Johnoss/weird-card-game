@@ -1,8 +1,7 @@
-﻿using Assets.Scripts.Features.MVC;
+﻿using Features.MVC;
 using JetBrains.Annotations;
-using Zenject;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     [UsedImplicitly]
     public class GameProgressController : AbstractController

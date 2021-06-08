@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     public interface IScoreController
     {

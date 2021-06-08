@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Card.Effects
+namespace Features.Card.Effects
 {
     public enum CardEffect
     {

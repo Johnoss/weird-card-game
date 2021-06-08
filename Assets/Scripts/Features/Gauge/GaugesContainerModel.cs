@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using UniRx;
 
-namespace Assets.Scripts.Features.Gauge
+namespace Features.Gauge
 {
     public class GaugesContainerModel : AbstractModel
     {

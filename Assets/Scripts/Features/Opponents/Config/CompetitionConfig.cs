@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Utilities.Extensions;
-using Sirenix.OdinInspector;
 using UnityEngine;
+using Utilities.Extensions;
+using Utilities.Ranged_Int;
 
-namespace Assets.Scripts.Features.Opponents.Config
+namespace Features.Opponents.Config
 {
     [CreateAssetMenu(fileName = "CompetitionConfig", menuName = "Config/CompetitionConfig")]
     public class CompetitionConfig : ScriptableObject

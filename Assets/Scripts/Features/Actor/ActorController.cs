@@ -1,6 +1,6 @@
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 
-namespace Assets.Scripts.Features.Actor
+namespace Features.Actor
 {
     public class ActorController : AbstractController
     {

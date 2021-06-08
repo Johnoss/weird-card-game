@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Features.Animations.Actor.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Actor.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Actor
+namespace Features.Animations.Actor
 {
     [RequireComponent(typeof(RectTransform))]
     public class ActorShakeTweener : AbstractTweener

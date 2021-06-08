@@ -1,10 +1,8 @@
-using Assets.Scripts.Features.MVC;
-using System;
+using Features.MVC;
 using JetBrains.Annotations;
 using UniRx;
-using UnityEngine;
 
-namespace Assets.Scripts.Features.Audio
+namespace Features.Audio
 {
     [UsedImplicitly]
     public class AudioModel : AbstractModel

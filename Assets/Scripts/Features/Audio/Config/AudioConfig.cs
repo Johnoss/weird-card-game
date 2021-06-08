@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Utilities.Extensions;
 using UnityEngine;
+using Utilities.Extensions;
+using Utilities.Ranged_Float;
 
-namespace Assets.Scripts.Features.Audio.Config
+namespace Features.Audio.Config
 {
     [CreateAssetMenu(fileName = "AudioConfig", menuName = "Config/AudioConfig")]
     public class AudioConfig : ScriptableObject

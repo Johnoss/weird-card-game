@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Config
+namespace Features.Animations.Config
 {
     public abstract class AbstractTweenerConfig : ScriptableObject
     {

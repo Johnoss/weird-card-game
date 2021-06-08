@@ -1,5 +1,5 @@
-using Assets.Scripts.Features.Animations.Score;
-using Assets.Scripts.Features.MVC;
+using Features.Animations.Score;
+using Features.MVC;
 using JetBrains.Annotations;
 using TMPro;
 using UniRx;
@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     public class ScoreView : AbstractView
     {

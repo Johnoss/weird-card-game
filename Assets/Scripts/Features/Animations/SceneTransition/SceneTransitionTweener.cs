@@ -1,10 +1,8 @@
-﻿using Assets.Scripts.Features.Animations.SceneTransition.Config;
-using Assets.Scripts.Utilities.Extensions;
-using DG.Tweening;
-using DG.Tweening.Core.Easing;
+﻿using DG.Tweening;
+using Features.Animations.SceneTransition.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.SceneTransition
+namespace Features.Animations.SceneTransition
 {
     [RequireComponent(typeof(CanvasGroup))]
     public class SceneTransitionTweener : AbstractTweener

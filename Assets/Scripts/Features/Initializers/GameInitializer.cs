@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Features.Actor;
-using Assets.Scripts.Features.Card.Factory;
-using Assets.Scripts.Features.Gauge.Factory;
-using Assets.Scripts.Features.SceneControl;
-using Assets.Scripts.Features.Score;
-using Assets.Scripts.Features.Score.Factory;
+using Features.Actor;
+using Features.Card.Factory;
+using Features.Gauge.Factory;
+using Features.SceneControl;
+using Features.Score;
+using Features.Score.Factory;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Features.Initializers
+namespace Features.Initializers
 {
     [UsedImplicitly]
     public class GameInitializer : IInitializable

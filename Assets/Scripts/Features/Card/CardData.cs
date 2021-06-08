@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Assets.Scripts.Features.Card.Effects;
+using Features.Card.Effects;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Card
+namespace Features.Card
 {
     public class CardData
     {

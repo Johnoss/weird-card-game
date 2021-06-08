@@ -1,10 +1,10 @@
-using Assets.Scripts.Features.Audio;
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.MVC;
+using Features.Audio;
+using Features.Card.SelectedCard;
+using Features.MVC;
 using UniRx;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Card
+namespace Features.Card
 {
     public class CardController : AbstractController
     {

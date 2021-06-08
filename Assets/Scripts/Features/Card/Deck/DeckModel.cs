@@ -1,11 +1,11 @@
-using Assets.Scripts.Features.Card.Config;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Utilities.Extensions;
 using System.Collections.Generic;
 using System.Linq;
+using Features.Card.Config;
+using Features.MVC;
 using UniRx;
+using Utilities.Extensions;
 
-namespace Assets.Scripts.Features.Card.Deck
+namespace Features.Card.Deck
 {
     public class DeckModel : AbstractModel
     {

@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Features.Card.Effects;
+using Features.Card.Effects;
 using UnityEngine;
+using Utilities.Ranged_Float;
 
-namespace Assets.Scripts.Features.Gauge.Config
+namespace Features.Gauge.Config
 {
     [CreateAssetMenu(fileName = "CommonStatsConfig", menuName = "Config/CommonStatsConfig")]
     public class CommonStatsConfig : ScriptableObject

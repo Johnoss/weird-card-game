@@ -1,10 +1,10 @@
-using Assets.Scripts.Features.Initializers;
-using Assets.Scripts.Features.SceneControl;
-using Assets.Scripts.Features.Score;
+using Features.Initializers;
+using Features.SceneControl;
+using Features.Score;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Installers.GameScene
 {
     public class GameInstaller : MonoInstaller
     {

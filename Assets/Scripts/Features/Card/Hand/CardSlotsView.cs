@@ -1,13 +1,13 @@
 using System.Collections.Generic;
-using Assets.Scripts.Features.Animations.Hand;
-using Assets.Scripts.Features.Card.Config;
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.MVC;
+using Features.Animations.Hand;
+using Features.Card.Config;
+using Features.Card.SelectedCard;
+using Features.MVC;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Features.Card.Hand
+namespace Features.Card.Hand
 {
     public class CardSlotsView : AbstractView, IInitializable
     {

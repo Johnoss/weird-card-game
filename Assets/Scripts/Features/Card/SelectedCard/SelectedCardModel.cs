@@ -1,8 +1,8 @@
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using JetBrains.Annotations;
 using UniRx;
 
-namespace Assets.Scripts.Features.Card.SelectedCard
+namespace Features.Card.SelectedCard
 {
     [UsedImplicitly]
     public class SelectedCardModel : AbstractModel

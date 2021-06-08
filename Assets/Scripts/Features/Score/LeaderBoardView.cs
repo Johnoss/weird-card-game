@@ -1,14 +1,14 @@
-﻿using Assets.Scripts.Features.Animations.Card;
-using Assets.Scripts.Features.Animations.UI;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.UI;
+﻿using Features.Animations.Card;
+using Features.Animations.UI;
+using Features.MVC;
+using Features.UI;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     public class LeaderBoardView : AbstractView, IInitializable
     {

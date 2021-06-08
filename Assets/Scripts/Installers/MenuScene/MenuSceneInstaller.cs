@@ -1,9 +1,9 @@
-using Assets.Scripts.Features.Initializers;
-using Assets.Scripts.Features.SceneControl;
+using Features.Initializers;
+using Features.SceneControl;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.MenuScene
+namespace Installers.MenuScene
 {
     public class MenuSceneInstaller : MonoInstaller
     {

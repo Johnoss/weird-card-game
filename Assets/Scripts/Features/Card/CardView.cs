@@ -1,20 +1,20 @@
-using Assets.Scripts.Features.Animations.Card;
-using Assets.Scripts.Features.Animations.Card.Config;
-using Assets.Scripts.Features.Card.Config;
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Utilities.Extensions;
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
-using Assets.Scripts.Features.Audio;
+using Features.Animations.Card;
+using Features.Animations.Card.Config;
+using Features.Audio;
+using Features.Card.Config;
+using Features.Card.SelectedCard;
+using Features.MVC;
+using JetBrains.Annotations;
 using TMPro;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
+using Utilities.Extensions;
 using Zenject;
 
-namespace Assets.Scripts.Features.Card
+namespace Features.Card
 {
     public class CardView : AbstractView
     {

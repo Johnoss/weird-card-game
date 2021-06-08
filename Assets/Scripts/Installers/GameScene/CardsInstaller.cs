@@ -1,13 +1,13 @@
-using Assets.Scripts.Features.Card;
-using Assets.Scripts.Features.Card.Config;
-using Assets.Scripts.Features.Card.Deck;
-using Assets.Scripts.Features.Card.Factory;
-using Assets.Scripts.Features.Card.Hand;
-using Assets.Scripts.Features.Card.SelectedCard;
+using Features.Card;
+using Features.Card.Config;
+using Features.Card.Deck;
+using Features.Card.Factory;
+using Features.Card.Hand;
+using Features.Card.SelectedCard;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Installers.GameScene
 {
     public class CardsInstaller : MonoInstaller
     {

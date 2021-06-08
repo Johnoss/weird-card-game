@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.Card.SelectedCard;
+using Features.Card.SelectedCard;
 using Zenject;
 
-namespace Assets.Scripts.Installers.MenuScene
+namespace Installers.MenuScene
 {
     public class UIInstaller : MonoInstaller
     {

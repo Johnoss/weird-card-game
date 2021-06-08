@@ -1,10 +1,10 @@
-﻿using Assets.Scripts.Features.Animations.Gauge.Config;
-using Assets.Scripts.Features.Gauge.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Gauge.Config;
+using Features.Gauge.Config;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.Features.Animations.Gauge
+namespace Features.Animations.Gauge
 {
     [RequireComponent(typeof(RectTransform))]
     public class GaugeTweener : AbstractTweener

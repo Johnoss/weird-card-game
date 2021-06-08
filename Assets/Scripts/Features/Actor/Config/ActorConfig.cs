@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Actor.Config
+namespace Features.Actor.Config
 {
     [CreateAssetMenu(fileName = "ActorConfig", menuName = "Config/ActorConfig")]
     public class ActorConfig : ScriptableObject

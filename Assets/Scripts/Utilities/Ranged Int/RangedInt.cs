@@ -39,55 +39,58 @@
 
 using UnityEngine;
 
-[System.Serializable]
-public class RangedInt
+namespace Utilities.Ranged_Int
 {
-    //------------------------------------------------------------------------------------//
-    //----------------------------------- FIELDS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public int min;
-    public int max;
-
-    //------------------------------------------------------------------------------------//
-    //---------------------------------- METHODS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public void Init()
+    [System.Serializable]
+    public class RangedInt
     {
-        min = 0;
-        max = 1;
-    }//End of Init()
+        //------------------------------------------------------------------------------------//
+        //----------------------------------- FIELDS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public int min;
+        public int max;
+
+        //------------------------------------------------------------------------------------//
+        //---------------------------------- METHODS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public void Init()
+        {
+            min = 0;
+            max = 1;
+        }//End of Init()
 
 
-    public RangedInt()
-    {
-        Init();
-    }//End of MinMaxFloat()
+        public RangedInt()
+        {
+            Init();
+        }//End of MinMaxFloat()
 
 
-    public RangedInt(int min, int max)
-    {
-        this.min = min;
-        this.max = max;
-    }//End of MinMaxFloat(float min, float max)
+        public RangedInt(int min, int max)
+        {
+            this.min = min;
+            this.max = max;
+        }//End of MinMaxFloat(float min, float max)
 
 
-    public int GetRandomValue()
-    {
-        return Random.Range(min, max);
-    }//End of getRandomValue
+        public int GetRandomValue()
+        {
+            return Random.Range(min, max);
+        }//End of getRandomValue
 
 
-    public override string ToString()
-    {
-        return string.Format("[Class: {0}, Min: {1}, Max: {2}]", typeof(RangedInt).Name, min, max);
-    }//End of ToString()
+        public override string ToString()
+        {
+            return string.Format("[Class: {0}, Min: {1}, Max: {2}]", typeof(RangedInt).Name, min, max);
+        }//End of ToString()
 
 
-    public static implicit operator int(RangedInt someRangedInt)
-    {
-        return someRangedInt.GetRandomValue();
-    }//End of implicit operator float
+        public static implicit operator int(RangedInt someRangedInt)
+        {
+            return someRangedInt.GetRandomValue();
+        }//End of implicit operator float
 
+    }
 }//End of MinMaxFloat

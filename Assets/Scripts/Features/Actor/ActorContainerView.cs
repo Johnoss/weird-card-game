@@ -1,9 +1,9 @@
-using Assets.Scripts.Features.MVC;
 using System.Collections.Generic;
-using Assets.Scripts.Features.Gauge;
+using Features.Gauge;
+using Features.MVC;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Actor
+namespace Features.Actor
 {
     public class ActorContainerView : AbstractView
     {
@@ -17,7 +17,5 @@ namespace Assets.Scripts.Features.Actor
                 actorViews[i].Setup(gaugeModels[i]);
             }
         }
-
-         
     }
 }

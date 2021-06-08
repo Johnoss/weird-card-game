@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Assets.Scripts.Utilities.Extensions
+namespace Utilities.Extensions
 {
     public static class ArrayExtensions
     {

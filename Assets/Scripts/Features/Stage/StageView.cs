@@ -1,11 +1,11 @@
-using Assets.Scripts.Features.Animations.Stage;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.UI;
+using Features.Animations.Stage;
+using Features.MVC;
+using Features.UI;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Features.Stage
+namespace Features.Stage
 {
     public class StageView : AbstractView, IInitializable
     {

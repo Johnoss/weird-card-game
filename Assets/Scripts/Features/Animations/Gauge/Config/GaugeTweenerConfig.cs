@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.Animations.Config;
+using Features.Animations.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Gauge.Config
+namespace Features.Animations.Gauge.Config
 {
     [CreateAssetMenu(fileName = "GaugeTweenerConfig", menuName = "Tweener/GaugeTweenerConfig")]
     public class GaugeTweenerConfig : AbstractTweenerConfig

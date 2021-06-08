@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Features.MVC
+namespace Features.MVC
 {
     public class AbstractView : MonoBehaviour
     {

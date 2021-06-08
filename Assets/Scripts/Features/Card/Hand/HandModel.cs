@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using UniRx;
 
-namespace Assets.Scripts.Features.Card.Hand
+namespace Features.Card.Hand
 {
     public class HandModel : AbstractModel
     {

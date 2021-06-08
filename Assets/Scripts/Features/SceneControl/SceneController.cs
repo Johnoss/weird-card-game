@@ -1,13 +1,13 @@
 using System;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.SceneControl.Config;
+using Features.MVC;
+using Features.SceneControl.Config;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine.SceneManagement;
 using Zenject;
-using Scene = Assets.Scripts.Features.SceneControl.Config.Scene;
+using Scene = Features.SceneControl.Config.Scene;
 
-namespace Assets.Scripts.Features.SceneControl
+namespace Features.SceneControl
 {
     [UsedImplicitly]
     public class SceneController : AbstractController

@@ -1,15 +1,15 @@
-﻿using Assets.Scripts.Features.Audio;
-using Assets.Scripts.Features.Card.Deck;
-using Assets.Scripts.Features.Card.Hand;
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.Gauge;
-using Assets.Scripts.Features.Gauge.Config;
-using Assets.Scripts.Features.MVC;
+﻿using System.Collections.Generic;
+using Features.Audio;
+using Features.Card.Deck;
+using Features.Card.Hand;
+using Features.Card.SelectedCard;
+using Features.Gauge;
+using Features.Gauge.Config;
+using Features.MVC;
 using JetBrains.Annotations;
-using System.Collections.Generic;
 using Zenject;
 
-namespace Assets.Scripts.Features.Card.Factory
+namespace Features.Card.Factory
 {
     [UsedImplicitly]
     public class CardFactory

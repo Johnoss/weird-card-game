@@ -1,9 +1,9 @@
-﻿using Assets.Scripts.Features.Animations.Config;
-using Assets.Scripts.Features.Animations.UI.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Config;
+using Features.Animations.UI.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.UI
+namespace Features.Animations.UI
 {
     [RequireComponent(typeof(RectTransform))]
     public class PinTweener : AbstractTweener

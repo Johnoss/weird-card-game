@@ -1,10 +1,10 @@
-using Assets.Scripts.Features.Score;
-using Assets.Scripts.Features.Score.Config;
-using Assets.Scripts.Features.Score.Factory;
+using Features.Score;
+using Features.Score.Config;
+using Features.Score.Factory;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Installers.GameScene
 {
     public class ScoreInstaller : MonoInstaller
     {

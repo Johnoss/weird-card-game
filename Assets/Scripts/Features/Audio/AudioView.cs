@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using UniRx;
 using UnityEngine;
 using UnityEngine.Audio;
 using Zenject;
 
-namespace Assets.Scripts.Features.Audio
+namespace Features.Audio
 {
     public class AudioView : AbstractView, IInitializable
     {

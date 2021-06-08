@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Features.Animations.Stage.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Stage.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Stage
+namespace Features.Animations.Stage
 {
     [RequireComponent(typeof(RectTransform))]
     public class StageCameraTweener : AbstractTweener

@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.MVC;
+using Features.MVC;
 using JetBrains.Annotations;
 
-namespace Assets.Scripts.Features.SceneControl
+namespace Features.SceneControl
 {
     [UsedImplicitly]
     public class SceneModel : AbstractModel

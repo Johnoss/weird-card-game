@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Audio
+namespace Features.Audio
 {
     public class AudioEffectData
     {

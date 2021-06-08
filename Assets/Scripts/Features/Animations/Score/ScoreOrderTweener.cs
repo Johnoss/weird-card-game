@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Features.Animations.Score.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Score.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Score
+namespace Features.Animations.Score
 {
     [RequireComponent(typeof(RectTransform))]
     public class ScoreOrderTweener : AbstractTweener

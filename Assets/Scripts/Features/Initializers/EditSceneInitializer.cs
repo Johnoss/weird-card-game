@@ -1,11 +1,11 @@
-﻿using Assets.Scripts.Features.Card.Factory;
+﻿using System.Collections;
+using Features.Card.Factory;
 using JetBrains.Annotations;
-using System.Collections;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Features.Initializers
+namespace Features.Initializers
 {
     [UsedImplicitly]
     public class EditSceneInitializer : IInitializable

@@ -39,38 +39,41 @@
 
 using UnityEngine;
 
-[System.Serializable]
-public class RangedIntAttribute : PropertyAttribute
+namespace Utilities.Ranged_Int
 {
-
-    //------------------------------------------------------------------------------------//
-    //----------------------------- ENUM DECLARATIONS ------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public enum RangeDisplayType // [1]
+    [System.Serializable]
+    public class RangedIntAttribute : PropertyAttribute
     {
-        LockedRanges,
-        EditableRanges,
-        HideRanges
+
+        //------------------------------------------------------------------------------------//
+        //----------------------------- ENUM DECLARATIONS ------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public enum RangeDisplayType // [1]
+        {
+            LockedRanges,
+            EditableRanges,
+            HideRanges
+        }
+
+        //------------------------------------------------------------------------------------//
+        //----------------------------------- FIELDS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public int max;
+        public int min;
+        public RangeDisplayType rangeDisplayType;
+
+        //------------------------------------------------------------------------------------//
+        //---------------------------------- METHODS -----------------------------------------//
+        //------------------------------------------------------------------------------------//
+
+        public RangedIntAttribute(int min, int max, RangeDisplayType rangeDisplayType = RangeDisplayType.LockedRanges)
+        {
+            this.min = min;
+            this.max = max;
+            this.rangeDisplayType = rangeDisplayType;
+        }//End of RangedIntAttribute()
+
     }
-
-    //------------------------------------------------------------------------------------//
-    //----------------------------------- FIELDS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public int max;
-    public int min;
-    public RangeDisplayType rangeDisplayType;
-
-    //------------------------------------------------------------------------------------//
-    //---------------------------------- METHODS -----------------------------------------//
-    //------------------------------------------------------------------------------------//
-
-    public RangedIntAttribute(int min, int max, RangeDisplayType rangeDisplayType = RangeDisplayType.LockedRanges)
-    {
-        this.min = min;
-        this.max = max;
-        this.rangeDisplayType = rangeDisplayType;
-    }//End of RangedIntAttribute()
-
 }//End of class

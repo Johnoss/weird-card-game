@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.Animations.Config;
+using Features.Animations.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Actor.Config
+namespace Features.Animations.Actor.Config
 {
     [CreateAssetMenu(fileName = "ActorShakeTweenerConfig", menuName = "Tweener/ActorShakeTweenerConfig")]
     public class ActorShakeTweenerConfig : AbstractTweenerConfig

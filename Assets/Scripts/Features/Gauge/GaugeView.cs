@@ -1,13 +1,13 @@
-using Assets.Scripts.Features.Animations.Gauge;
-using Assets.Scripts.Features.Gauge.Config;
-using Assets.Scripts.Features.MVC;
+using Features.Animations.Gauge;
+using Features.Gauge.Config;
+using Features.MVC;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Scripts.Features.Gauge
+namespace Features.Gauge
 {
     public class GaugeView : AbstractView
     {

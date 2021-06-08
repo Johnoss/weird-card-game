@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.SceneControl.Config
+namespace Features.SceneControl.Config
 {
     [CreateAssetMenu(fileName = "SceneConfig", menuName = "Config/SceneConfig")]
     public class SceneConfig : ScriptableObject

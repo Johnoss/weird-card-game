@@ -1,14 +1,14 @@
-using Assets.Scripts.Features.Card.SelectedCard;
-using Assets.Scripts.Features.MVC;
-using Assets.Scripts.Features.Score.Config;
-using JetBrains.Annotations;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Features.Gauge;
+using Features.Card.SelectedCard;
+using Features.Gauge;
+using Features.MVC;
+using Features.Score.Config;
+using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Score
+namespace Features.Score
 {
     [UsedImplicitly]
     public class PlayerScoreController : AbstractController, IScoreController

@@ -1,7 +1,7 @@
-using Assets.Scripts.Features.Animations.Config;
+using Features.Animations.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Card.Config
+namespace Features.Animations.Card.Config
 {
     [CreateAssetMenu(fileName = "TranslateToParentTweenerConfig", menuName = "Tweener/TranslateToParentTweenerConfig")]
     public class TranslateToParentTweenerConfig : AbstractTweenerConfig

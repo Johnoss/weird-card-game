@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Features.Animations.Hand.Config;
-using DG.Tweening;
+﻿using DG.Tweening;
+using Features.Animations.Hand.Config;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Animations.Hand
+namespace Features.Animations.Hand
 {
     [RequireComponent(typeof(RectTransform))]
     public class HandSelectedTweener : AbstractTweener

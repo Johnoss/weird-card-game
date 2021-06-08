@@ -1,8 +1,8 @@
-using Assets.Scripts.Features.Actor;
+using Features.Actor;
 using UnityEngine;
 using Zenject;
 
-namespace Assets.Scripts.Installers.GameScene
+namespace Installers.GameScene
 {
     public class ActorInstaller : MonoInstaller
     {

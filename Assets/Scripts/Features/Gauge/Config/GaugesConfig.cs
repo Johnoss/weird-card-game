@@ -1,9 +1,9 @@
-using Assets.Scripts.Features.Card.Effects;
 using System;
 using System.Collections.Generic;
+using Features.Card.Effects;
 using UnityEngine;
 
-namespace Assets.Scripts.Features.Gauge.Config
+namespace Features.Gauge.Config
 {
     [CreateAssetMenu(fileName = "GaugesConfig", menuName = "Config/GaugesConfig")]
     public class GaugesConfig : ScriptableObject

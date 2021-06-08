@@ -1,10 +1,10 @@
-using Assets.Scripts.Features.Audio.Config;
-using Assets.Scripts.Features.MVC;
-using JetBrains.Annotations;
 using System;
+using Features.Audio.Config;
+using Features.MVC;
+using JetBrains.Annotations;
 using Zenject;
 
-namespace Assets.Scripts.Features.Audio
+namespace Features.Audio
 {
     [UsedImplicitly]
     public class AudioController : AbstractController

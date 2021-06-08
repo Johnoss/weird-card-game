@@ -1,16 +1,16 @@
-using Assets.Scripts.Features.Actor.Config;
-using Assets.Scripts.Features.MVC;
 using System;
 using System.Linq;
-using Assets.Scripts.Features.Animations.Actor;
-using Assets.Scripts.Features.Gauge;
-using Assets.Scripts.Features.Gauge.Config;
+using Features.Actor.Config;
+using Features.Animations.Actor;
+using Features.Gauge;
+using Features.Gauge.Config;
+using Features.MVC;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Scripts.Features.Actor
+namespace Features.Actor
 {
     public class ActorView : AbstractView
     {
