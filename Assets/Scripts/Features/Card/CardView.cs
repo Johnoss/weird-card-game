@@ -139,21 +139,27 @@ namespace Features.Card
                     OnCardUp();
                     break;
                 case SwipeDirection.Right:
+                {
                     OffsetSelectedCard(1);
                     break;
+                }
                 case SwipeDirection.Down:
                     selectedCardController.DeselectCard();
                     break;
                 case SwipeDirection.Left:
+                {
                     OffsetSelectedCard(-1);
                     break;
+                }
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(swipeDirection), swipeDirection, null);
+                    return;
             }
         }
 
         private void OffsetSelectedCard(int offset)
         {
+            if (!cardModel.IsSelected.Value) return;
+            
             var newIndex = (int) Mathf.Repeat(cardModel.CardIndex + offset, deckConfig.HandSize);
             selectedCardController.SetSelectedCard(newIndex);
         }

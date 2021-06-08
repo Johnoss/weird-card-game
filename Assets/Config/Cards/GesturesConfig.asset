@@ -21,3 +21,4 @@ MonoBehaviour:
     ThresholdVector: {x: 0, y: -500}
   - Direction: 4
     ThresholdVector: {x: -300, y: 0}
+  draggingDistanceMultiplier: 0.2

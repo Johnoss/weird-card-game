@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb766ae76074acab6b5fe8082492d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  draggableParent: {fileID: 251406623753026314}
+  gesturesConfig: {fileID: 11400000, guid: 042b23ef48340c047952ebf2a7a12f23, type: 2}
 --- !u!1 &1799112971548768672
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +899,6 @@ MonoBehaviour:
   - {fileID: 2248205241457477551}
   - {fileID: 8498891099607172208}
   draggableView: {fileID: 2931750580904341935}
-  cardButton: {fileID: 6767403306905725165}
   selectedCardTweener: {fileID: 7986394386028612486}
   playCardTweener: {fileID: 2549258905302189255}
   drawCardTweener: {fileID: 6453868177671363408}

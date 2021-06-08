@@ -18,6 +18,11 @@ namespace Features.Card.Config
         [Header("SwipeThresholds")]
         [SerializeField] private List<SwipeThresholdSetting> swipeThresholdSettings;
 
+        [Header("Dragging")]
+        [Range(0f, 2f)]
+        [SerializeField] private float draggingDistanceMultiplier;
+        public float DraggingDistanceMultiplier => draggingDistanceMultiplier;
+
         public SwipeDirection GetSwipeDirection(Vector2 totalVector)
         {
             var validMagnitudeDirections = swipeThresholdSettings
