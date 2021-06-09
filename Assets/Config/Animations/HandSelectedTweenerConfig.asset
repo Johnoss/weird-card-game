@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationDurationSeconds: 0.5
   ease: 6
-  defaultYPosition: -230
-  hiddenYPosition: -330
+  defaultYPosition: 0
+  hiddenYPosition: -200

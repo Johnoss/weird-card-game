@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeThresholdSettings:
   - Direction: 1
-    ThresholdVector: {x: 0, y: 500}
+    ThresholdVector: {x: 0, y: 400}
   - Direction: 2
-    ThresholdVector: {x: 300, y: 0}
+    ThresholdVector: {x: 350, y: 0}
   - Direction: 3
-    ThresholdVector: {x: 0, y: -500}
+    ThresholdVector: {x: 0, y: -400}
   - Direction: 4
-    ThresholdVector: {x: -300, y: 0}
+    ThresholdVector: {x: -350, y: 0}
   draggingDistanceMultiplier: 0.2

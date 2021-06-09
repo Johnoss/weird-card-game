@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 76c94067a5abc534ab4cfea307015bec, type: 3}
   - {fileID: 21300000, guid: f9698824c5fa9af49ac6bc3a3d22ceee, type: 3}
   handArcRotationRange:
-    min: -12
-    max: 12
+    min: -5
+    max: 5
   handSize: 3
   cardPack: {fileID: 11400000, guid: d6fcc7ae0abea714ea435dc10e2bd23d, type: 2}
