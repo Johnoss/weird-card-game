@@ -56,9 +56,9 @@ namespace Features.Card.Factory
             var draggableBundle = CreateDraggableBundle();
             var gestureBundle = CreateGestureBundle(draggableBundle.Model);
             
-            var model = new CardModel(slotIndex, commonStatsConfig);
+            var model = new CardModel(slotIndex);
             var controller = new CardController(model, selectedCardController, audioController, selectedCardModel);
-            var view = cardViewFactory.Create(model, controller, selectedCardModel, gestureBundle.Model,
+            var view = cardViewFactory.Create(model, controller, gestureBundle.Model, draggableBundle.Model,
                 draggableBundle.Controller, cardSlotsView.SelectedCardParent);
             
             view.transform.SetParent(cardParent, false);

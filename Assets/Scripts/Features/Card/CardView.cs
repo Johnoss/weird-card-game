@@ -19,7 +19,7 @@ namespace Features.Card
     public class CardView : AbstractView
     {
         [UsedImplicitly]
-        public class ViewFactory : PlaceholderFactory<CardModel, CardController, SelectedCardModel, CardGesturesModel,
+        public class ViewFactory : PlaceholderFactory<CardModel, CardController, CardGesturesModel, DraggableModel,
             DraggableController, Transform, CardView>
         { }
 
@@ -33,21 +33,23 @@ namespace Features.Card
         [SerializeField] private RectTransform cardTransform;
         [SerializeField] private List<EffectTooltipView> effectViews;
         [SerializeField] private DraggableView draggableView;
+        
+        [Header("Interaction")]
+        [SerializeField] private Button cardButton;
 
         [Header("Animation")]
         [SerializeField] private TranslateToParentTweener selectedCardTweener;
         [SerializeField] private PlayCardTweener playCardTweener;
+        [SerializeField] private TranslateToParentTweener returnCardTweener;
         [SerializeField] private DrawCardTweener drawCardTweener;
 
         [Header("Configs")]
         [SerializeField] private DeckConfig deckConfig;
         [SerializeField] private PlayCardTweenerConfig playCardTweenerConfig;
-        [SerializeField] private TranslateToParentTweenerConfig selectedCardTweenerConfig;
         [SerializeField] private DrawCardTweenerConfig drawCardTweenerConfig;
 
 
         private CardModel cardModel;
-        private SelectedCardModel selectedCardModel;
         private CardGesturesModel cardGesturesModel;
         private CardController cardController;
         private SelectedCardController selectedCardController;
@@ -58,26 +60,23 @@ namespace Features.Card
         private Vector3 defaultCardScale;
         private AudioController audioController;
         private DraggableController draggableController;
-
-        private float PlaySequenceSeconds => drawCardTweenerConfig.GetDelaySecondsForIndex(cardModel.CardIndex) +
-                                             drawCardTweenerConfig.AnimationDurationSeconds +
-                                             playCardTweenerConfig.AnimationDurationSeconds;
+        private DraggableModel draggableModel;
 
         [Inject]
         public void Construct(CardModel cardModel, CardController cardController, SelectedCardModel selectedCardModel,
             CardGesturesModel cardGesturesModel, AudioController audioController,
             DraggableController draggableController, SelectedCardController selectedCardController,
-            Transform selectedCardParent)
+            Transform selectedCardParent, DraggableModel draggableModel)
         {
             this.cardModel = cardModel;
-            this.selectedCardModel = selectedCardModel;
             this.cardGesturesModel = cardGesturesModel;
             this.cardController = cardController;
             this.selectedCardParent = selectedCardParent;
             this.audioController = audioController;
             this.draggableController = draggableController;
             this.selectedCardController = selectedCardController;
-
+            this.draggableModel = draggableModel;
+            
             defaultAnchoredPosition = cardTransform.anchoredPosition;
             defaultRotation = cardTransform.localEulerAngles;
             defaultCardScale = cardTransform.localScale;
@@ -106,10 +105,6 @@ namespace Features.Card
                 .Delay(TimeSpan.FromSeconds(playCardTweenerConfig.AnimationDurationSeconds))
                 .Subscribe(_ => UpdateCard()).AddTo(this);
 
-            selectedCardModel
-                .OnPlaySelectedCard
-                .Subscribe(_ => cardController.SuspendCard(PlaySequenceSeconds)).AddTo(this);
-
             cardModel.IsSelected
                 .Skip(1)
                 .Subscribe(_ => UpdateIsSelected()).AddTo(this);
@@ -123,12 +118,21 @@ namespace Features.Card
                 .Delay(TimeSpan.FromSeconds(playCardTweenerConfig.AnimationDurationSeconds))
                 .Subscribe(_ => ResetCard()).AddTo(this);
 
+            cardButton.OnClickAsObservable().Subscribe(_ => OnCardUp()).AddTo(this);
+
+            draggableModel.IsDragging
+                .DelayFrameSubscription(1)
+                .Subscribe(isDragging => cardButton.interactable = !isDragging).AddTo(this);
+            
             ResetCard();
         }
 
         private void SubscribeGestures()
         {
             cardGesturesModel.OnSwipe.Subscribe(OnCardSwiped).AddTo(this);
+            cardGesturesModel.OnSwipe
+                .Where(swipe => swipe == SwipeDirection.None)
+                .Subscribe(_ => returnCardTweener.Animate()).AddTo(this);
         }
 
         private void OnCardSwiped(SwipeDirection swipeDirection)
@@ -158,7 +162,11 @@ namespace Features.Card
 
         private void OffsetSelectedCard(int offset)
         {
-            if (!cardModel.IsSelected.Value) return;
+            if (!cardModel.IsSelected.Value)
+            {
+                returnCardTweener.Animate();
+                return;
+            }
             
             var newIndex = (int) Mathf.Repeat(cardModel.CardIndex + offset, deckConfig.HandSize);
             selectedCardController.SetSelectedCard(newIndex);
@@ -193,8 +201,6 @@ namespace Features.Card
             selectedCardTweener.transform.SetParent(targetParent);
 
             selectedCardTweener.Animate();
-
-            cardController.SuspendCard(selectedCardTweenerConfig.SuspendSelectedSeconds);
         }
 
         private void UpdateCard()

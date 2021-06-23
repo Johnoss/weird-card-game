@@ -1,3 +1,4 @@
+using Features.Animations.Card;
 using Features.Card.Config;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,7 +12,7 @@ namespace Features.Card
 
         [Header("Config")]
         [SerializeField] private GesturesConfig gesturesConfig;
-        
+
         private DraggableController draggableController;
         
         public void Setup(DraggableController draggableController)

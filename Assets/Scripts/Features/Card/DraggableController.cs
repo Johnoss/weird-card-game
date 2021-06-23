@@ -16,6 +16,7 @@ namespace Features.Card
         public void SetStartPosition(Vector2 startPosition)
         {
             draggableModel.SetStartPosition(startPosition);
+            draggableModel.SetIsDragging(true);
         }
 
         public void SetDeltaPosition(Vector2 deltaPosition)
@@ -27,6 +28,7 @@ namespace Features.Card
         {
             var totalVector = draggableModel.StartDragPosition.Value - endPosition;
             draggableModel.SetTotalDragVector(totalVector);
+            draggableModel.SetIsDragging(false);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Installers.GameScene
             Container.BindInstance(cardSlotsView);
 
             Container
-                .BindFactory<CardModel, CardController, SelectedCardModel, CardGesturesModel, DraggableController,
+                .BindFactory<CardModel, CardController, CardGesturesModel, DraggableModel, DraggableController,
                     Transform, CardView, CardView.ViewFactory>()
                 .FromComponentInNewPrefab(deckConfig.CardPrefab);
 
