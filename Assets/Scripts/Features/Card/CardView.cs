@@ -6,6 +6,7 @@ using Features.Audio;
 using Features.Card.Config;
 using Features.Card.SelectedCard;
 using Features.MVC;
+using Features.SessionSettings;
 using JetBrains.Annotations;
 using TMPro;
 using UniRx;
@@ -61,12 +62,13 @@ namespace Features.Card
         private AudioController audioController;
         private DraggableController draggableController;
         private DraggableModel draggableModel;
+        private GameModeModel gameModeModel;
 
         [Inject]
         public void Construct(CardModel cardModel, CardController cardController, SelectedCardModel selectedCardModel,
             CardGesturesModel cardGesturesModel, AudioController audioController,
             DraggableController draggableController, SelectedCardController selectedCardController,
-            Transform selectedCardParent, DraggableModel draggableModel)
+            Transform selectedCardParent, DraggableModel draggableModel, GameModeModel gameModeModel)
         {
             this.cardModel = cardModel;
             this.cardGesturesModel = cardGesturesModel;
@@ -76,6 +78,7 @@ namespace Features.Card
             this.draggableController = draggableController;
             this.selectedCardController = selectedCardController;
             this.draggableModel = draggableModel;
+            this.gameModeModel = gameModeModel;
             
             defaultAnchoredPosition = cardTransform.anchoredPosition;
             defaultRotation = cardTransform.localEulerAngles;
@@ -88,7 +91,7 @@ namespace Features.Card
         {
             for (var i = 0; i < effectViews.Count; i++)
             {
-                effectViews[i].Setup(cardModel, i);
+                effectViews[i].Setup(cardModel, i, gameModeModel);
             }
             
             draggableView.Setup(draggableController);

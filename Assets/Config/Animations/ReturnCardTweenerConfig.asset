@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3cf0548edbed364abf676e5d1d0a1b4, type: 3}
-  m_Name: SelectedCardTweenerConfig
+  m_Name: ReturnCardTweenerConfig
   m_EditorClassIdentifier: 
   animationDurationSeconds: 0.35
   ease: 6
-  suspendSelectedSeconds: 0.5

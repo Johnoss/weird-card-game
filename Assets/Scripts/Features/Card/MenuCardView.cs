@@ -7,6 +7,7 @@ using Features.Gauge.Config;
 using Features.MVC;
 using Features.SceneControl;
 using Features.SceneControl.Config;
+using Features.SessionSettings;
 using JetBrains.Annotations;
 using UniRx;
 using UnityEngine;
@@ -25,6 +26,7 @@ namespace Features.Card
 
         [Header("Definition")]
         [SerializeField] private int index;
+        [SerializeField] private GameMode gameMode;
 
         [Header("Interaction")]
         [SerializeField] private Button cardButton;
@@ -39,7 +41,9 @@ namespace Features.Card
         [Inject] private SelectedCardModel selectedCardModel;
         [Inject] private SelectedCardController selectedCardController;
         [Inject] private SceneController sceneController;
-
+        [Inject] private GameModeController gameModeController;
+        
+        
         [Inject] private SceneTransitionView sceneTransitionView;
 
         private bool IsSelected => selectedCardModel.SelectedCardIndex.Value == index;
@@ -78,6 +82,9 @@ namespace Features.Card
             {
                 playCardTweener.Animate();
                 sceneTransitionView.Fade(true);
+                
+                gameModeController.SetGameMode(gameMode);
+                
                 sceneController.LoadScene(Scene.Game, transitionTweenerConfig.AnimationDurationSeconds);
             }
 

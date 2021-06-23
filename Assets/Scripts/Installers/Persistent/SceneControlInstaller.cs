@@ -1,4 +1,5 @@
 using Features.SceneControl;
+using Features.SessionSettings;
 using Zenject;
 
 namespace Installers.Persistent
@@ -9,6 +10,8 @@ namespace Installers.Persistent
         {
             Container.Bind<SceneModel>().AsSingle();
             Container.Bind<SceneController>().AsSingle();
+            Container.Bind<GameModeModel>().AsSingle();
+            Container.Bind<GameModeController>().AsSingle();
         }
     }
 }

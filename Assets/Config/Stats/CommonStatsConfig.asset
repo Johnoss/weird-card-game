@@ -125,3 +125,10 @@ MonoBehaviour:
       max: 0.2
     EffectDescription: +++
     EffectTextColor: {r: 0.95294124, g: 0, b: 0, a: 1}
+  hiddenEffectSetting:
+    CardEffect: 1
+    EffectValue:
+      min: 0
+      max: 0
+    EffectDescription: '?'
+    EffectTextColor: {r: 0.38039216, g: 0.38039216, b: 0.38039216, a: 1}

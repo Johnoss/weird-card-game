@@ -4,6 +4,7 @@ using Features.Animations.Card.Config;
 using Features.Card.Effects;
 using Features.Gauge.Config;
 using Features.MVC;
+using Features.SessionSettings;
 using TMPro;
 using UniRx;
 using UnityEngine;
@@ -27,11 +28,13 @@ namespace Features.Card
         private int actorIndex;
 
         private GaugesConfig.GaugeSetting gaugeSetting;
+        private GameModeModel gameModeModel;
 
-        public void Setup(CardModel cardModel, int actorIndex)
+        public void Setup(CardModel cardModel, int actorIndex, GameModeModel gameModeModel)
         {
             this.cardModel = cardModel;
             this.actorIndex = actorIndex;
+            this.gameModeModel = gameModeModel;
 
             gaugeSetting = gaugesConfig.GaugeSettings[actorIndex];
 
@@ -55,9 +58,24 @@ namespace Features.Card
                 return;
             }
 
-            var reactionExpression = gaugeSetting.ReactionSettings.FirstOrDefault(reaction => reaction.Effect == effect)
-                ?.ReactionSprite;
-            var effectSetting = commonStatsConfig.GetEffectSetting(effect);
+            CommonStatsConfig.EffectSetting effectSetting;
+            CardEffect displayEffect;
+            switch (gameModeModel.CurrentGameMode.Value)
+            {
+                case GameMode.Normal:
+                    effectSetting = commonStatsConfig.GetEffectSetting(effect);
+                    displayEffect = effect;
+                    break;
+                case GameMode.NoHints:
+                    effectSetting = commonStatsConfig.HiddenEffectSetting;
+                    displayEffect = CardEffect.LowerLow;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+
+            var reactionExpression = gaugeSetting.ReactionSettings
+                .FirstOrDefault(reaction => reaction.Effect == displayEffect)?.ReactionSprite;
 
             effectWeightText.text = effectSetting.EffectDescription;
             effectWeightText.color = effectSetting.EffectTextColor;

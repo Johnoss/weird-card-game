@@ -49,7 +49,8 @@ namespace Features.Gauge.Config
 
         [Header("Effect Definition")]
         [SerializeField] private List<EffectSetting> effectSettings;
-
+        [SerializeField] private EffectSetting hiddenEffectSetting;
+        public EffectSetting HiddenEffectSetting => hiddenEffectSetting;
 
         public RangeScoreSetting GetScoreSettingForValue(float value)
         {
